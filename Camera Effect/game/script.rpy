@@ -6,7 +6,7 @@ init python:
     preferences.gl_framerate = 60
 
 
-    class CamFx(renpy.Displayable):
+    class CamFX(renpy.Displayable):
         """
         La imagen del background debe ser de una resolución mayor a 1080p (según el juego, 2100p recomendado)
         Debido a las limitantes del juego, se recomienda jugar a pantalla completa (60fps, 30fps en modo ventana)
@@ -15,7 +15,7 @@ init python:
         """
 
         def __init__(self, bg, w, h, **kwargs):
-            super(CamFx, self).__init__(**kwargs)
+            super(CamFX, self).__init__(**kwargs)
 
             # Background
             self.bg = renpy.load_image( Image(bg) )
@@ -35,7 +35,7 @@ init python:
             self.speed = 0.008
 
         
-        def camera_effect(self, render, width, height):
+        def fx_on(self, render, width, height):
             # El ancho y alto relativo al fondo y la ventana según la posición del cursor
             relw = (self.bgsize[0] - width) * self.mouseX // width
             relh = (self.bgsize[1] - height) * self.mouseY // height
@@ -63,7 +63,7 @@ init python:
             render = renpy.Render(width, height)
 
             # Draw background
-            self.camera_effect(render, width, height)
+            self.fx_on(render, width, height)
 
             # Redraw
             renpy.redraw(self, 0)
@@ -82,7 +82,7 @@ init python:
 
 
 screen magic_camera:
-    add CamFx('room.png', 1280, 720)
+    add CamFX('room.png', 1280, 720)
 
     textbutton 'Close':
         align (1.0, 1.0)
