@@ -24,8 +24,11 @@ label start:
     call screen magic_camera with dissolve
 ```
 
-> El width y height no están implementados como debe de ser (pereza), pero corregirlo es fácil.
+> El width y height no están implementados como debe de ser (que pereza), pero corregirlo es fácil.
 
+<p align="center">
+<img  src="./assets/camfx.gif">
+</p>
 
 
 ---
@@ -48,3 +51,7 @@ label start:
 
 > La implementación es distinta a CamFX, se debe al uso de un gestor de escenarios para distribuir mejor la lógica dentro del juego (recomiendo su estructura). Los ficheros nuevos son: `engine.rpy`, `scenes.rpy`, `camFX.rpy`, `parallaxFX.rpy`.
 
+
+<p align="center">
+<img  src="./assets/parallax.gif">
+</p>
