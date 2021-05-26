@@ -16,8 +16,8 @@ init python:
         def render(self, width, height, st, at):
             render = renpy.Render(width, height)
             
-            self.scene.on_draw(render, width, height, st)
             self.scene.on_update()
+            self.scene.on_draw(render, width, height, st)
 
             renpy.redraw(self, 0)
             return render

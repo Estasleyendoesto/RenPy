@@ -5,19 +5,13 @@ While running game code:
     call screen magic_camera with dissolve
   File "renpy/common/000statements.rpy", line 570, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/script.rpy", line 1, in execute
-    ﻿screen magic_camera:
-  File "game/script.rpy", line 1, in execute
-    ﻿screen magic_camera:
-  File "game/script.rpy", line 2, in execute
-    add Test('fondo.jpg')
-  File "game/script.rpy", line 2, in <module>
-    add Test('fondo.jpg')
-  File "game/scenes.rpy", line 16, in __init__
-    alivefx = AliveFX('nigga.res')
-  File "game/aliveFX.rpy", line 37, in __init__
-    decode = io.BytesIO(base64.b64decode( data + '=' * (-len(data) % 4) ))
-TypeError: Incorrect padding
+  File "game/engine.rpy", line 20, in render
+    self.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 21, in on_draw
+    self.alivefx.on(render)
+  File "game/aliveFX.rpy", line 41, in on
+    render.blit( self.frames[self.n], (0, 0) )
+IndexError: tuple index out of range
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -38,40 +32,41 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "renpy/display/core.py", line 3101, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3512, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/screen.py", line 432, in visit_all
-    callback(self)
-  File "renpy/display/core.py", line 3512, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/screen.py", line 443, in per_interact
-    self.update()
-  File "renpy/display/screen.py", line 631, in update
-    self.screen.function(**self.scope)
-  File "game/script.rpy", line 1, in execute
-    ﻿screen magic_camera:
-  File "game/script.rpy", line 1, in execute
-    ﻿screen magic_camera:
-  File "game/script.rpy", line 2, in execute
-    add Test('fondo.jpg')
-  File "game/script.rpy", line 2, in <module>
-    add Test('fondo.jpg')
-  File "game/scenes.rpy", line 16, in __init__
-    alivefx = AliveFX('nigga.res')
-  File "game/aliveFX.rpy", line 37, in __init__
-    decode = io.BytesIO(base64.b64decode( data + '=' * (-len(data) % 4) ))
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/base64.py", line 78, in b64decode
-TypeError: Incorrect padding
+  File "renpy/display/core.py", line 3611, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2441, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "game/engine.rpy", line 20, in render
+    self.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 21, in on_draw
+    self.alivefx.on(render)
+  File "game/aliveFX.rpy", line 41, in on
+    render.blit( self.frames[self.n], (0, 0) )
+IndexError: tuple index out of range
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 AliveFX 1.0
-Wed May 26 18:36:17 2021
+Wed May 26 20:15:26 2021

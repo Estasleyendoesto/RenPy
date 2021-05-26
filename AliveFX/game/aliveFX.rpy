@@ -35,5 +35,8 @@ init python:
             self.frames = tuple(frames)
 
 
+            self.n = 0
+
         def on(self, render):
-            render.blit( self.frames[0], (0, 0) )
+            render.blit( self.frames[self.n], (0, 0) )
+            self.n = self.n % (len(self.frames) - 1) + 1
