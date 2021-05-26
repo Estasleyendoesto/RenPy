@@ -1,32 +1,20 @@
-﻿# Coloca el código de tu juego en este archivo.
+﻿screen magic_camera:
+    add Test('fondo.jpg')
 
-# Declara los personajes usados en el juego como en el ejemplo:
+    textbutton 'Close':
+        align (1.0, 1.0)
+        offset (-10, -10)
+        action Return()
+
 
 define e = Character("Eileen")
-
-
-# El juego comienza aquí.
-
 label start:
-
-    # Muestra una imagen de fondo: Aquí se usa un marcador de posición por
-    # defecto. Es posible añadir un archivo en el directorio 'images' con el
-    # nombre "bg room.png" or "bg room.jpg" para que se muestre aquí.
-
     scene bg room
-
-    # Muestra un personaje: Se usa un marcador de posición. Es posible
-    # reemplazarlo añadiendo un archivo llamado "eileen happy.png" al directorio
-    # 'images'.
-
     show eileen happy
-
-    # Presenta las líneas del diálogo.
-
     e "Has creado un nuevo juego Ren'Py."
 
+    $ quick_menu = False
+    call screen magic_camera with dissolve
+
     e "Añade una historia, imágenes y música, ¡y puedes presentarlo al mundo!"
-
-    # Finaliza el juego:
-
     return

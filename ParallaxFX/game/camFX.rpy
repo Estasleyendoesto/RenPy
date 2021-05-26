@@ -7,6 +7,7 @@
 # site: https://github.com/Estasleyendoesto/RenPy
 
 init python:
+
     class CamFX:
         def __init__(self, bg, speed = 0.01):
             # Background
