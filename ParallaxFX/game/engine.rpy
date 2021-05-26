@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# name: EngineFX
+# version: 1.0
+# description: Scene engine for Ren'Py Engine
+# author: Estasleyendoesto
+# site: https://github.com/Estasleyendoesto/RenPy
+
 init python:
      class Engine(renpy.Displayable):
         scene = None

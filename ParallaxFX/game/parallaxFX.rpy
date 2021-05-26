@@ -1,3 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# name: ParallaxFX
+# version: 1.0
+# description: Parallax Effect for Ren'Py Engine
+# author: Estasleyendoesto
+# site: https://github.com/Estasleyendoesto/RenPy
+
 init 1 python:
     class Layer:
         """

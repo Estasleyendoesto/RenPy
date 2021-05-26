@@ -1,4 +1,11 @@
-﻿
+﻿#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# name: CamFX
+# version: 1.0
+# description: Camera effect for Ren'Py Engine
+# author: Estasleyendoesto
+# site: https://github.com/Estasleyendoesto/RenPy
+
 init python:
     config.developer = True
     preferences.fullscreen   = True
