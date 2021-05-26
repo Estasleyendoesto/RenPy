@@ -49,7 +49,10 @@ def compile(input, ext='webp'):
         file = str(i) + '.' + ext
 
         try:
-            frame.save( file, format=formats[ext], lossless=True )
+            if ext == 'webp':
+                frame.save( file, format=formats[ext], lossless=False )
+            else:
+                frame.save( file, format=formats[ext], optimize=True )
         except:
             print(ext, 'no es un formato soportado')
             print('Formatos soportados: webp, jpeg, png, gif')

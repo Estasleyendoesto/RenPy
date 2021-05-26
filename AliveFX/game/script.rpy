@@ -1,5 +1,20 @@
-﻿screen magic_camera:
+﻿init python:
+    config.developer = True
+    preferences.fullscreen   = True
+    preferences.gl_tearing   = False
+    preferences.gl_framerate = 60
+
+
+screen magic_camera:
     add Test('fondo.jpg')
+
+    textbutton 'Close':
+        align (1.0, 1.0)
+        offset (-10, -10)
+        action Return()
+
+screen magic_camera2:
+    add Test2('fondo.jpg')
 
     textbutton 'Close':
         align (1.0, 1.0)
@@ -17,4 +32,9 @@ label start:
     call screen magic_camera with dissolve
 
     e "Añade una historia, imágenes y música, ¡y puedes presentarlo al mundo!"
+
+    call screen magic_camera2 with dissolve
+
+    e "Añade una historia, imágenes y música, ¡y puedes presentarlo al mundo!"
+    
     return

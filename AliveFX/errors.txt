@@ -2,10 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/aliveFX.rpy", line 31: invalid syntax
-                form = rb'[^a-zA-Z0-9{}]+'.format(b'+/')
-                                          ^
-    
+File "game/aliveFX.rpy", line 18: non-default argument follows default argument
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Wed May 26 18:28:50 2021
+Thu May 27 00:19:56 2021

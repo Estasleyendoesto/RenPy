@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 17, in script
+  File "game/script.rpy", line 24, in script
     call screen magic_camera with dissolve
   File "renpy/common/000statements.rpy", line 570, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
   File "game/engine.rpy", line 20, in render
     self.scene.on_draw(render, width, height, st)
-  File "game/scenes.rpy", line 21, in on_draw
+  File "game/scenes.rpy", line 39, in on_draw
     self.alivefx.on(render)
-  File "game/aliveFX.rpy", line 41, in on
-    render.blit( self.frames[self.n], (0, 0) )
-IndexError: tuple index out of range
+  File "game/aliveFX.rpy", line 56, in on
+    frame = frame.subsurface( (self.x, self.y, width, height) )
+AttributeError: 'AliveFX' object has no attribute 'x'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 17, in script
+  File "game/script.rpy", line 24, in script
     call screen magic_camera with dissolve
   File "renpy/ast.py", line 1969, in execute
     self.call("execute")
@@ -42,6 +42,10 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/transition.py", line 368, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
   File "renpy/display/layout.py", line 777, in render
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
@@ -60,13 +64,13 @@ Full traceback:
   File "render.pyx", line 263, in renpy.display.render.render
   File "game/engine.rpy", line 20, in render
     self.scene.on_draw(render, width, height, st)
-  File "game/scenes.rpy", line 21, in on_draw
+  File "game/scenes.rpy", line 39, in on_draw
     self.alivefx.on(render)
-  File "game/aliveFX.rpy", line 41, in on
-    render.blit( self.frames[self.n], (0, 0) )
-IndexError: tuple index out of range
+  File "game/aliveFX.rpy", line 56, in on
+    frame = frame.subsurface( (self.x, self.y, width, height) )
+AttributeError: 'AliveFX' object has no attribute 'x'
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 AliveFX 1.0
-Wed May 26 20:15:26 2021
+Thu May 27 01:23:12 2021
