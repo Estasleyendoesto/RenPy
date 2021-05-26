@@ -1,0 +1,11 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/aliveFX.rpy", line 31: invalid syntax
+                form = rb'[^a-zA-Z0-9{}]+'.format(b'+/')
+                                          ^
+    
+
+Ren'Py Version: Ren'Py 7.4.4.1439
+Wed May 26 18:28:50 2021

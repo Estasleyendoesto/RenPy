@@ -13,11 +13,12 @@ init 1 python:
             super(Test, self).__init__(**kwargs)
             self.bg = renpy.load_image( Image(bg) )
 
-            alivefx = AliveFX('nigga.gif')
+            self.alivefx = AliveFX('nigga.res')
 
 
         def on_draw(self, render, width, height, st):
             render.blit(self.bg, (0, 0))
+            self.alivefx.on(render)
 
         def on_event(self, event, x, y, st):
             pass

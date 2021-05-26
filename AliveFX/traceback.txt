@@ -14,10 +14,10 @@ While running game code:
   File "game/script.rpy", line 2, in <module>
     add Test('fondo.jpg')
   File "game/scenes.rpy", line 16, in __init__
-    alivefx = AliveFX('nigga.gif')
-  File "game/aliveFX.rpy", line 21, in __init__
-    for property, value in vars(file).items():
-TypeError: vars() argument must have __dict__ attribute
+    alivefx = AliveFX('nigga.res')
+  File "game/aliveFX.rpy", line 37, in __init__
+    decode = io.BytesIO(base64.b64decode( data + '=' * (-len(data) % 4) ))
+TypeError: Incorrect padding
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -46,6 +46,8 @@ Full traceback:
     d.visit_all(callback, seen)
   File "renpy/display/core.py", line 567, in visit_all
     d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
   File "renpy/display/screen.py", line 432, in visit_all
     callback(self)
   File "renpy/display/core.py", line 3512, in <lambda>
@@ -63,12 +65,13 @@ Full traceback:
   File "game/script.rpy", line 2, in <module>
     add Test('fondo.jpg')
   File "game/scenes.rpy", line 16, in __init__
-    alivefx = AliveFX('nigga.gif')
-  File "game/aliveFX.rpy", line 21, in __init__
-    for property, value in vars(file).items():
-TypeError: vars() argument must have __dict__ attribute
+    alivefx = AliveFX('nigga.res')
+  File "game/aliveFX.rpy", line 37, in __init__
+    decode = io.BytesIO(base64.b64decode( data + '=' * (-len(data) % 4) ))
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python2.7/base64.py", line 78, in b64decode
+TypeError: Incorrect padding
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 AliveFX 1.0
-Wed May 26 13:58:20 2021
+Wed May 26 18:36:17 2021
