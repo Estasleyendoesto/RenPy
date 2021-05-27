@@ -4,13 +4,6 @@
 # author: Estasleyendoesto
 # site: https://github.com/Estasleyendoesto/RenPy
 
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
 import sys
 import os
 import io
@@ -24,7 +17,7 @@ def compile(input, ext='webp'):
     output = os.path.splitext(input)[0] + '.res'
 
     try:
-        # Para Python < 2.7
+        # Python < 2.7
         import cPickle
     except:
         # pickle incluye acelerador en C para python 3+

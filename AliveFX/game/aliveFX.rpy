@@ -17,23 +17,11 @@ init python:
     
     class AliveFX:
         def __init__(self, res, delay=0.0, loop=0, rever=False):
-            # Open package of frames
-            file = renpy.file(res).name # Tarda en abrir (necesita optimzar)
+            # Ligero retraso al abrir (puede reducirse a 0, sacrificando la predicción de renpy)
+            file = renpy.file(res).name 
+            # ...
             res  = cPickle.load( open(file, 'rb') )
-
-            # frames = []
-            # for frame in res:
-                # byte = io.BytesIO(base64.b64decode( frame ))
-                # print( decode.__class__.__name__ )
-                # frames.append( byte )
-                # start = time.time()
-                # frames.append( pygame.image.load(decode) )
-                # print( frames[-1].__class__.__name__ )
-                # end = time.time()
-                # print(end - start)
-
-            # self.frames = frames
-            self.frames = res
+            self.frames = [ io.BytesIO(base64.b64decode( frame )) for frame in res ]
 
             self.loop  = loop  # 0 = inf
             self.delay = delay # millis (per frame, 0.001 -> 1.0)
@@ -48,31 +36,15 @@ init python:
             self.times = 0
             self.delta = 0
 
+
         def optimize(self):
             frame = self.frames[self.pos]
-            if frame.__class__.__name__ != 'Surface':
-                byte = io.BytesIO(base64.b64decode( frame ))
-                self.frames[0] = pygame.image.load(byte)
 
-            # frame = self.frames[0]
+            if isinstance(frame, io.BytesIO):
+                frame = pygame.image.load(frame)
+                self.frames[self.pos] = frame
 
-            print(self.frames[0])
-            # print(frame)
-            # print(self.frames.index( frame ))
-            print('---')
-            # if frame.__class__.__name__ == 'BytesIO':
-                # frame = pygame.image.load(frame)
-
-
-            # print(frame)
             return frame
-
-            # try:
-                # frame = pygame.image.load(frame)
-            # except:
-                # pass
-
-            # return frame
             
 
         def on(self, render, st, x, y):
