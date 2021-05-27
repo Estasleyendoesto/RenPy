@@ -1,168 +1,46 @@
-Thu May 27 15:02:19 2021
+Thu May 27 19:59:39 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
  
 
-Bootstrap to the start of init.init took 0.91s
-Early init took 0.02s
-Loader init took 0.08s
-Loading error handling took 0.17s
-Loading script took 1.62s
-Loading save slot metadata. took 0.08s
+Bootstrap to the start of init.init took 0.23s
+Early init took 0.01s
+Loader init took 0.03s
+Loading error handling took 0.05s
+Loading script took 0.35s
+Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.39s
-Loading analysis data took 0.10s
-Analyze and compile ATL took 0.01s
+Running init code took 0.17s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.53s
+Dump and make backups. took 0.26s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.07s
+Initial gc. took 0.04s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.18s
-Build styles took 0.03s
-Load screen analysis took 0.00s
-Analyze screens took 0.07s
-Save screen analysis took 0.47s
-Prepare screens took 0.45s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.08s
-Running _start took 0.01s
-Performance test:
-Interface start took 0.19s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 7.65800881386s
-Resetting cache.
-Bootstrap to the start of init.init took 210.98s
-Early init took 0.01s
-Loader init took 0.06s
-Loading error handling took 0.08s
-Loading script took 0.74s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.21s
-Loading analysis data took 0.08s
-Analyze and compile ATL took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.43s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
 Init translation took 0.12s
 Build styles took 0.02s
 Load screen analysis took 0.00s
 Analyze screens took 0.06s
-Save screen analysis took 0.25s
-Prepare screens took 0.48s
+Save screen analysis took 0.18s
+Prepare screens took 0.23s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.08s
-Running _start took 0.01s
-Performance test:
-Interface start took 0.12s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 214.92391181s
-Resetting cache.
-Bootstrap to the start of init.init took 221.82s
-Early init took 0.01s
-Loader init took 0.14s
-Loading error handling took 0.10s
-Loading script took 0.74s
-Loading save slot metadata. took 0.10s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.21s
-Loading analysis data took 0.09s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.45s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.11s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.21s
-Build styles took 0.04s
-Load screen analysis took 0.00s
-Analyze screens took 0.11s
-Save screen analysis took 0.34s
-Prepare screens took 0.31s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save bytecode. took 0.07s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.11s
+Interface start took 0.18s
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 1440, 900)
 swap interval: 1 frames
-Windowed mode.
+Fullscreen mode.
 Vendor: 'Intel'
 Renderer: 'Intel(R) HD Graphics 2000'
 Version: '3.1.0 - Build 9.17.10.4459'
@@ -181,321 +59,12 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 225.909045935s
 Screen sizes: virtual=(1280, 720) physical=(1440, 900) drawable=(1440, 900)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Resetting cache.
-Bootstrap to the start of init.init took 297.20s
-Early init took 0.01s
-Loader init took 0.10s
-Loading error handling took 0.11s
-Loading script took 0.84s
-Loading save slot metadata. took 0.11s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.20s
-Loading analysis data took 0.11s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.41s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.17s
-Build styles took 0.02s
-Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.28s
-Prepare screens took 0.28s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 301.075192928s
-Resetting cache.
-Bootstrap to the start of init.init took 310.44s
-Early init took 0.01s
-Loader init took 0.09s
-Loading error handling took 0.10s
-Loading script took 0.97s
-Loading save slot metadata. took 0.10s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.17s
-Loading analysis data took 0.08s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.56s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.10s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.16s
-Build styles took 0.03s
-Load screen analysis took 0.00s
-Analyze screens took 0.07s
-Save screen analysis took 0.19s
-Prepare screens took 0.33s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
-Running _start took 0.01s
-Performance test:
-Interface start took 0.12s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 314.554135799s
-Resetting cache.
-Bootstrap to the start of init.init took 387.31s
-Early init took 0.00s
-Loader init took 0.06s
-Loading error handling took 0.07s
-Loading script took 0.71s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.11s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.35s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.14s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.12s
-Prepare screens took 0.17s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.08s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 390.417074919s
-Resetting cache.
-Bootstrap to the start of init.init took 404.76s
-Early init took 0.01s
-Loader init took 0.12s
-Loading error handling took 0.11s
-Loading script took 0.43s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.19s
-Loading analysis data took 0.11s
-Analyze and compile ATL took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.42s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.20s
-Prepare screens took 0.29s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
-Running _start took 0.01s
-Performance test:
-Interface start took 0.11s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 408.081942797s
-Resetting cache.
-Bootstrap to the start of init.init took 589.91s
-Early init took 0.01s
-Loader init took 0.07s
-Loading error handling took 0.10s
-Loading script took 0.55s
-Loading save slot metadata. took 0.04s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.13s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.37s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.14s
-Prepare screens took 0.18s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 592.863566875s
+Total time until interface ready: 3.04598021507s
+<Surface(225x320x32)>
+---
 
 Full traceback:
   File "game/script.rpy", line 32, in script
@@ -516,302 +85,28 @@ Full traceback:
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
   File "renpy/display/core.py", line 3611, in interact_core
     self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2441, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/screen.py", line 681, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "game/engine.rpy", line 20, in render
-    self.scene.on_draw(render, width, height, st)
-  File "game/scenes.rpy", line 21, in on_draw
-    self.alivefx.on(render, 860 - x, 470 - y, st) # st temporal
-  File "game/aliveFX.rpy", line 49, in on
-    if self.sleeper(render, st): # parámetros temporales (eliminar)
-  File "game/aliveFX.rpy", line 96, in sleeper
-    a = v / st
-ZeroDivisionError: float division by zero
+  File "renpy/display/core.py", line 2445, in draw_screen
+    renpy.display.draw.draw_screen(surftree)
+  File "gldraw.pyx", line 741, in renpy.gl.gldraw.GLDraw.draw_screen
+  File "gldraw.pyx", line 836, in renpy.gl.gldraw.GLDraw.draw_render_textures
+  File "gldraw.pyx", line 840, in renpy.gl.gldraw.GLDraw.draw_render_textures
+  File "render.pyx", line 872, in renpy.display.render.Render.render_to_texture
+  File "gldraw.pyx", line 1097, in renpy.gl.gldraw.GLDraw.render_to_texture
+  File "gltexture.pyx", line 958, in renpy.gl.gltexture.texture_grid_from_drawing
+  File "gltexture.pyx", line 492, in renpy.gl.gltexture.TextureCore.render_to
+  File "glrtt_fbo.pyx", line 104, in renpy.gl.glrtt_fbo.FboRtt.render
+  File "gldraw.pyx", line 1092, in renpy.gl.gldraw.GLDraw.render_to_texture.draw_func
+  File "gldraw.pyx", line 1069, in renpy.gl.gldraw.GLDraw.draw_transformed
+  File "gldraw.pyx", line 1069, in renpy.gl.gldraw.GLDraw.draw_transformed
+  File "gldraw.pyx", line 1069, in renpy.gl.gldraw.GLDraw.draw_transformed
+  File "gldraw.pyx", line 1069, in renpy.gl.gldraw.GLDraw.draw_transformed
+  File "gldraw.pyx", line 1069, in renpy.gl.gldraw.GLDraw.draw_transformed
+  File "gldraw.pyx", line 904, in renpy.gl.gldraw.GLDraw.draw_transformed
+Exception: Unknown drawing type. u'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'
 
 While running game code:
   File "game/script.rpy", line 32, in script
     call screen magic_camera with dissolve
   File "renpy/common/000statements.rpy", line 570, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/engine.rpy", line 20, in render
-    self.scene.on_draw(render, width, height, st)
-  File "game/scenes.rpy", line 21, in on_draw
-    self.alivefx.on(render, 860 - x, 470 - y, st) # st temporal
-  File "game/aliveFX.rpy", line 49, in on
-    if self.sleeper(render, st): # parámetros temporales (eliminar)
-  File "game/aliveFX.rpy", line 96, in sleeper
-    a = v / st
-ZeroDivisionError: float division by zero
-Resetting cache.
-Bootstrap to the start of init.init took 619.15s
-Early init took 0.01s
-Loader init took 0.04s
-Loading error handling took 0.05s
-Loading script took 0.24s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.37s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.12s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.13s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 621.552730799s
-
-Full traceback:
-  File "game/script.rpy", line 32, in script
-    call screen magic_camera with dissolve
-  File "renpy/ast.py", line 1969, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 1957, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/exports.py", line 2983, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3101, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3611, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2441, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/screen.py", line 681, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "game/engine.rpy", line 20, in render
-    self.scene.on_draw(render, width, height, st)
-  File "game/scenes.rpy", line 21, in on_draw
-    self.alivefx.on(render, 860 - x, 470 - y, st) # st temporal
-  File "game/aliveFX.rpy", line 49, in on
-    if self.sleeper(render, st): # parámetros temporales (eliminar)
-  File "game/aliveFX.rpy", line 96, in sleeper
-    a = v / st + 1
-ZeroDivisionError: float division by zero
-
-While running game code:
-  File "game/script.rpy", line 32, in script
-    call screen magic_camera with dissolve
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/engine.rpy", line 20, in render
-    self.scene.on_draw(render, width, height, st)
-  File "game/scenes.rpy", line 21, in on_draw
-    self.alivefx.on(render, 860 - x, 470 - y, st) # st temporal
-  File "game/aliveFX.rpy", line 49, in on
-    if self.sleeper(render, st): # parámetros temporales (eliminar)
-  File "game/aliveFX.rpy", line 96, in sleeper
-    a = v / st + 1
-ZeroDivisionError: float division by zero
-Resetting cache.
-Bootstrap to the start of init.init took 627.35s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.04s
-Loading script took 0.34s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.19s
-Loading analysis data took 0.09s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.21s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.13s
-Prepare screens took 0.18s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.07s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 629.826864004s
-Resetting cache.
-Bootstrap to the start of init.init took 649.13s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.06s
-Loading script took 0.34s
-Loading save slot metadata. took 0.05s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.14s
-Loading analysis data took 0.10s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.30s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.13s
-Prepare screens took 0.15s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 651.735753775s
+Exception: Unknown drawing type. u'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'

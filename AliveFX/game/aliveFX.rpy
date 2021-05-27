@@ -12,24 +12,28 @@ init python:
     import base64
     import math
     import io
-    import gc
+
+    import time
     
     class AliveFX:
         def __init__(self, res, delay=0.0, loop=0, rever=False):
             # Open package of frames
-            file = renpy.file(res).name
-
-            gc.disable()
+            file = renpy.file(res).name # Tarda en abrir (necesita optimzar)
             res  = cPickle.load( open(file, 'rb') )
-            gc.enable()
 
-            frames = []
+            # frames = []
+            # for frame in res:
+                # byte = io.BytesIO(base64.b64decode( frame ))
+                # print( decode.__class__.__name__ )
+                # frames.append( byte )
+                # start = time.time()
+                # frames.append( pygame.image.load(decode) )
+                # print( frames[-1].__class__.__name__ )
+                # end = time.time()
+                # print(end - start)
 
-            for frame in res:
-                decode = io.BytesIO(base64.b64decode( frame ))
-                frames.append( pygame.image.load(decode) )
-
-            self.frames = tuple(frames)
+            # self.frames = frames
+            self.frames = res
 
             self.loop  = loop  # 0 = inf
             self.delay = delay # millis (per frame, 0.001 -> 1.0)
@@ -44,13 +48,39 @@ init python:
             self.times = 0
             self.delta = 0
 
+        def optimize(self):
+            frame = self.frames[self.pos]
+            if frame.__class__.__name__ != 'Surface':
+                byte = io.BytesIO(base64.b64decode( frame ))
+                self.frames[0] = pygame.image.load(byte)
+
+            # frame = self.frames[0]
+
+            print(self.frames[0])
+            # print(frame)
+            # print(self.frames.index( frame ))
+            print('---')
+            # if frame.__class__.__name__ == 'BytesIO':
+                # frame = pygame.image.load(frame)
+
+
+            # print(frame)
+            return frame
+
+            # try:
+                # frame = pygame.image.load(frame)
+            # except:
+                # pass
+
+            # return frame
+            
 
         def on(self, render, st, x, y):
             if self.sleeper(st):
                 if self.looper():
                     self.tracker()
             
-            frame = self.frames[self.pos]
+            frame = self.optimize()
 
             # Experimental
             if self.landscape:

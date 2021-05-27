@@ -2,7 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/aliveFX.rpy", line 18: non-default argument follows default argument
+File "game/aliveFX.rpy", line 39: is not terminated with a newline. (Check strings and parenthesis.)
+                    frames.append( pygame.image.load(frame)
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Thu May 27 00:19:56 2021
+Thu May 27 18:58:54 2021

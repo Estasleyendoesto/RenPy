@@ -38,7 +38,7 @@ init 1 python:
             self.camfx.fx_on(render)
 
             x, y = self.camfx.meta()[:2]
-            self.alivefx.on(render, x, y)
+            self.alivefx.on(render, st, x, y)
 
         def on_event(self, event, x, y, st):
             self.camfx.mouse(x, y)

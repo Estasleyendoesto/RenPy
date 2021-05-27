@@ -13,6 +13,7 @@
 
 import sys
 import os
+import io
 
 def compile(input, ext='webp'):
     """
@@ -31,6 +32,7 @@ def compile(input, ext='webp'):
 
     from PIL import Image, ImageSequence
     import base64
+    import pygame
 
     # Extraer los frames del gif y guardarlos en una lista
     frames = []
@@ -66,7 +68,7 @@ def compile(input, ext='webp'):
         b64  = b64.decode('utf-8')
         data = b64.replace('=', '')
         data += '=' * (-len(data) % 4)
-        
+
         # Almacenado
         frames.append( data )
 
@@ -75,7 +77,7 @@ def compile(input, ext='webp'):
         i += 1
 
     # Conversión a tupla
-    frames = tuple(frames)
+    # frames = frames
 
     # Guardarlos con cPickle
     with open(output, 'wb') as fp:
