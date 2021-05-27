@@ -12,7 +12,7 @@ init 1 python:
         def __init__(self, bg, **kwargs):
             super(Test, self).__init__(**kwargs)
             self.camfx = CamFX( bg, 0.05 )
-            self.alivefx = AliveFX('nigga.res', 0.420)
+            self.alivefx = AliveFX('nigga.res', 0.460)
 
         def on_draw(self, render, width, height, st):
             self.camfx.fx_on(render)
@@ -31,7 +31,7 @@ init 1 python:
         def __init__(self, bg, **kwargs):
             super(Test2, self).__init__(**kwargs)
             self.camfx = CamFX( bg, 0.05 )
-            self.alivefx = AliveFX('landscape.res', 0.3)
+            self.alivefx = AliveFX('landscape.res', 0.78)
             self.alivefx.landscape = True
 
         def on_draw(self, render, width, height, st):

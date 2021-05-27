@@ -1,41 +1,40 @@
-Thu May 27 20:58:48 2021
+Thu May 27 22:00:34 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
  
 
-Bootstrap to the start of init.init took 0.14s
-Early init took 0.00s
+Bootstrap to the start of init.init took 0.12s
+Early init took 0.01s
 Loader init took 0.06s
 Loading error handling took 0.03s
-Loading script took 0.26s
+Loading script took 0.18s
 Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.09s
+Running init code took 0.11s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
-Dump and make backups. took 0.16s
+Dump and make backups. took 0.13s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.04s
 Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.11s
-Prepare screens took 0.10s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.11s
+Interface start took 0.09s
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -62,11 +61,1201 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1.85102891922s
+Total time until interface ready: 1.5189948082s
+
+
+      0       0       0       0 start frame
+
+      0       0       0       0 start idle_frame (expensive)
+
+      0       0       0       0 end idle_frame (expensive)
+
+      0       0       0       0 pre wait
+
+  48001   48001       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  48001       0       0       0 start of interact while loop
+
+  48001       0       0       0 start idle_frame (expensive)
+
+  48001       0       0       0 end idle_frame (expensive)
+
+  48001       0       0       0 pre wait
+
+ 100001   52000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 100001       0       0       0 start of interact while loop
+
+ 100001       0       0       0 start idle_frame (expensive)
+
+ 100001       0       0       0 end idle_frame (expensive)
+
+ 100001       0       0       0 pre wait
+
+ 150001   50000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 150001       0       0       0 start of interact while loop
+
+ 150001       0       0       0 start idle_frame (expensive)
+
+ 150001       0       0       0 end idle_frame (expensive)
+
+ 150001       0       0       0 pre wait
+
+ 154000    3999       0       0 post wait <Event(768-KEYDOWN {'repeat': 0, 'unicode': '', 'key': 1073741889, 'scancode': 65L, 'mod': 0})>
+
+ 154000       0       0       0 start of interact while loop
+
+ 154000       0       0       0 start idle_frame (expensive)
+
+ 154000       0       0       0 end idle_frame (expensive)
+
+ 154000       0       0       0 pre wait
+
+ 154000       0       0       0 post wait <Event(32768-UserEvent0 {})>
+
+ 154000       0       0       0 start of interact while loop
+
+ 154000       0       0       0 start idle_frame (expensive)
+
+ 155004    1004       0       0 end idle_frame (expensive)
+
+ 155004       0       0       0 pre wait
+
+ 202000   46996       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 202000       0       0       0 start of interact while loop
+
+ 202000       0       0       0 start draw_screen
+
+ 202000       0       0       0 flip
+
+ 203008       0       0       0 end frame
+
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.01s
-Load screen analysis took 0.03s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
+
+
+      0       0       0       0 start frame
+
+      0       0       0       0 start idle_frame (expensive)
+
+      0       0       0       0 end idle_frame (expensive)
+
+      0       0       0       0 pre wait
+
+  36026   36026       0       0 post wait <Event(768-KEYDOWN {'repeat': 0, 'unicode': '', 'key': 1073741889, 'scancode': 65L, 'mod': 0})>
+
+  36026       0       0       0 start of interact while loop
+
+  36026       0       0       0 start idle_frame (expensive)
+
+  36026       0       0       0 end idle_frame (expensive)
+
+  36026       0       0       0 pre wait
+
+  36026       0       0       0 post wait <Event(32768-UserEvent0 {})>
+
+  36026       0       0       0 start of interact while loop
+
+  36026       0       0       0 start idle_frame (expensive)
+
+  36026       0       0       0 end idle_frame (expensive)
+
+  36026       0       0       0 pre wait
+
+  48026   12000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  48026       0       0       0 start of interact while loop
+
+  48026       0       0       0 start idle_frame (expensive)
+
+  48026       0       0       0 end idle_frame (expensive)
+
+  48026       0       0       0 pre wait
+
+  98026   50000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  98026       0       0       0 start of interact while loop
+
+  98026       0       0       0 start idle_frame (expensive)
+
+  98026       0       0       0 end idle_frame (expensive)
+
+  98026       0       0       0 pre wait
+
+ 140026   42000       0       0 post wait <Event(769-KEYUP {'repeat': 0, 'unicode': '', 'key': 1073741889, 'scancode': 65L, 'mod': 0})>
+
+ 140026       0       0       0 start of interact while loop
+
+ 140026       0       0       0 start idle_frame (expensive)
+
+ 140026       0       0       0 end idle_frame (expensive)
+
+ 140026       0       0       0 pre wait
+
+ 148026    8000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 148026       0       0       0 start of interact while loop
+
+ 148026       0       0       0 start idle_frame (expensive)
+
+ 148026       0       0       0 end idle_frame (expensive)
+
+ 148026       0       0       0 pre wait
+
+ 200026   52000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 200026       0       0       0 start of interact while loop
+
+ 200026       0       0       0 start draw_screen
+
+ 200026       0       0       0 flip
+
+ 201032       0       0       0 end frame
+
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+
+
+      0       0       0       0 start frame
+
+      0       0       0       0 start idle_frame (expensive)
+
+      0       0       0       0 end idle_frame (expensive)
+
+      0       0       0       0 pre wait
+
+   3999    3999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1086, 660), 'rel': (0, -1), 'which': 0L})>
+
+   3999       0       0       0 start of interact while loop
+
+   3999       0       0       0 start idle_frame (expensive)
+
+   3999       0       0       0 end idle_frame (expensive)
+
+   3999       0       0       0 pre wait
+
+   8028    4029       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1086, 659), 'rel': (0, -1), 'which': 0L})>
+
+   8028       0       0       0 start of interact while loop
+
+   8028       0       0       0 start idle_frame (expensive)
+
+   8028       0       0       0 end idle_frame (expensive)
+
+   8028       0       0       0 pre wait
+
+  12031    4003       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1085, 658), 'rel': (0, -1), 'which': 0L})>
+
+  12031       0       0       0 start of interact while loop
+
+  12031       0       0       0 start idle_frame (expensive)
+
+  12031       0       0       0 end idle_frame (expensive)
+
+  12031       0       0       0 pre wait
+
+  14029    1998       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  14029       0       0       0 start of interact while loop
+
+  14029       0       0       0 start idle_frame (expensive)
+
+  14029       0       0       0 end idle_frame (expensive)
+
+  14029       0       0       0 pre wait
+
+  14029       0       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1085, 657), 'rel': (0, -1), 'which': 0L})>
+
+  14029       0       0       0 start of interact while loop
+
+  14029       0       0       0 start idle_frame (expensive)
+
+  14029       0       0       0 end idle_frame (expensive)
+
+  14029       0       0       0 pre wait
+
+  18032    4003       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1084, 656), 'rel': (0, -1), 'which': 0L})>
+
+  18032       0       0       0 start of interact while loop
+
+  18032       0       0       0 start idle_frame (expensive)
+
+  18032       0       0       0 end idle_frame (expensive)
+
+  18032       0       0       0 pre wait
+
+  20030    1998       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1083, 656), 'rel': (-1, 0), 'which': 0L})>
+
+  20030       0       0       0 start of interact while loop
+
+  20030       0       0       0 start idle_frame (expensive)
+
+  20030       0       0       0 end idle_frame (expensive)
+
+  20030       0       0       0 pre wait
+
+  22031    2001       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1083, 655), 'rel': (0, -1), 'which': 0L})>
+
+  22031       0       0       0 start of interact while loop
+
+  22031       0       0       0 start idle_frame (expensive)
+
+  22031       0       0       0 end idle_frame (expensive)
+
+  22031       0       0       0 pre wait
+
+  26029    3998       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1083, 654), 'rel': (0, -1), 'which': 0L})>
+
+  26029       0       0       0 start of interact while loop
+
+  26029       0       0       0 start idle_frame (expensive)
+
+  26029       0       0       0 end idle_frame (expensive)
+
+  26029       0       0       0 pre wait
+
+  30028    3999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1082, 653), 'rel': (0, -1), 'which': 0L})>
+
+  30028       0       0       0 start of interact while loop
+
+  30028       0       0       0 start idle_frame (expensive)
+
+  30028       0       0       0 end idle_frame (expensive)
+
+  30028       0       0       0 pre wait
+
+  34029    4001       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1082, 652), 'rel': (0, -1), 'which': 0L})>
+
+  34029       0       0       0 start of interact while loop
+
+  34029       0       0       0 start idle_frame (expensive)
+
+  34029       0       0       0 end idle_frame (expensive)
+
+  34029       0       0       0 pre wait
+
+  38028    3999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1081, 651), 'rel': (0, -1), 'which': 0L})>
+
+  38028       0       0       0 start of interact while loop
+
+  38028       0       0       0 start idle_frame (expensive)
+
+  38028       0       0       0 end idle_frame (expensive)
+
+  38028       0       0       0 pre wait
+
+  42030    4002       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1081, 650), 'rel': (0, -1), 'which': 0L})>
+
+  42030       0       0       0 start of interact while loop
+
+  42030       0       0       0 start idle_frame (expensive)
+
+  42030       0       0       0 end idle_frame (expensive)
+
+  42030       0       0       0 pre wait
+
+  48030    6000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1079, 648), 'rel': (-1, -1), 'which': 0L})>
+
+  48030       0       0       0 start of interact while loop
+
+  48030       0       0       0 start idle_frame (expensive)
+
+  48030       0       0       0 end idle_frame (expensive)
+
+  48030       0       0       0 pre wait
+
+  52031    4001       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1079, 647), 'rel': (0, -1), 'which': 0L})>
+
+  52031       0       0       0 start of interact while loop
+
+  52031       0       0       0 start idle_frame (expensive)
+
+  52031       0       0       0 end idle_frame (expensive)
+
+  52031       0       0       0 pre wait
+
+  58030    5999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1078, 646), 'rel': (-1, -1), 'which': 0L})>
+
+  58030       0       0       0 start of interact while loop
+
+  58030       0       0       0 start idle_frame (expensive)
+
+  58030       0       0       0 end idle_frame (expensive)
+
+  58030       0       0       0 pre wait
+
+  60030    2000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1078, 645), 'rel': (0, -1), 'which': 0L})>
+
+  60030       0       0       0 start of interact while loop
+
+  60030       0       0       0 start idle_frame (expensive)
+
+  60030       0       0       0 end idle_frame (expensive)
+
+  60030       0       0       0 pre wait
+
+  64030    4000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  64030       0       0       0 start of interact while loop
+
+  64030       0       0       0 start idle_frame (expensive)
+
+  64030       0       0       0 end idle_frame (expensive)
+
+  64030       0       0       0 pre wait
+
+  66031    2001       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1078, 644), 'rel': (0, -1), 'which': 0L})>
+
+  66031       0       0       0 start of interact while loop
+
+  66031       0       0       0 start idle_frame (expensive)
+
+  66031       0       0       0 end idle_frame (expensive)
+
+  66031       0       0       0 pre wait
+
+  74028    7997       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1077, 643), 'rel': (0, -1), 'which': 0L})>
+
+  74028       0       0       0 start of interact while loop
+
+  74028       0       0       0 start idle_frame (expensive)
+
+  74028       0       0       0 end idle_frame (expensive)
+
+  74028       0       0       0 pre wait
+
+  80030    6002       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1076, 643), 'rel': (-1, 0), 'which': 0L})>
+
+  80030       0       0       0 start of interact while loop
+
+  80030       0       0       0 start idle_frame (expensive)
+
+  80030       0       0       0 end idle_frame (expensive)
+
+  80030       0       0       0 pre wait
+
+  82030    2000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1076, 642), 'rel': (0, -1), 'which': 0L})>
+
+  82030       0       0       0 start of interact while loop
+
+  82030       0       0       0 start idle_frame (expensive)
+
+  82030       0       0       0 end idle_frame (expensive)
+
+  82030       0       0       0 pre wait
+
+  88028    5998       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1076, 641), 'rel': (0, -1), 'which': 0L})>
+
+  88028       0       0       0 start of interact while loop
+
+  88028       0       0       0 start idle_frame (expensive)
+
+  88028       0       0       0 end idle_frame (expensive)
+
+  88028       0       0       0 pre wait
+
+  96030    8002       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1075, 641), 'rel': (-1, 0), 'which': 0L})>
+
+  96030       0       0       0 start of interact while loop
+
+  96030       0       0       0 start idle_frame (expensive)
+
+  96030       0       0       0 end idle_frame (expensive)
+
+  96030       0       0       0 pre wait
+
+ 106030   10000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (1075, 640), 'rel': (0, -1), 'which': 0L})>
+
+ 106030       0       0       0 start of interact while loop
+
+ 106030       0       0       0 start idle_frame (expensive)
+
+ 106030       0       0       0 end idle_frame (expensive)
+
+ 106030       0       0       0 pre wait
+
+ 116028    9998       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 116028       0       0       0 start of interact while loop
+
+ 116028       0       0       0 start idle_frame (expensive)
+
+ 116028       0       0       0 end idle_frame (expensive)
+
+ 116028       0       0       0 pre wait
+
+ 164028   48000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 164028       0       0       0 start of interact while loop
+
+ 164028       0       0       0 start idle_frame (expensive)
+
+ 164028       0       0       0 end idle_frame (expensive)
+
+ 164028       0       0       0 pre wait
+
+ 180030   16002       0       0 post wait <Event(768-KEYDOWN {'repeat': 0, 'unicode': '', 'key': 1073741889, 'scancode': 65L, 'mod': 0})>
+
+ 180030       0       0       0 start of interact while loop
+
+ 180030       0       0       0 start idle_frame (expensive)
+
+ 180030       0       0       0 end idle_frame (expensive)
+
+ 180030       0       0       0 pre wait
+
+ 180030       0       0       0 post wait <Event(32768-UserEvent0 {})>
+
+ 180030       0       0       0 start of interact while loop
+
+ 181033    1003       0       0 start idle_frame (expensive)
+
+ 181033       0       0       0 end idle_frame (expensive)
+
+ 181033       0       0       0 pre wait
+
+ 214986   33953       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 214986       0       0       0 start of interact while loop
+
+ 214986       0       0       0 start draw_screen
+
+ 214986       0       0       0 flip
+
+ 214986       0       0       0 end frame
+
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+
+
+      0       0       0       0 start frame
+
+   1007    1007       0       0 start idle_frame (expensive)
+
+   1007       0       0       0 end idle_frame (expensive)
+
+   1007       0       0       0 pre wait
+
+  27000   25993       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  27000       0       0       0 start of interact while loop
+
+  27000       0       0       0 start idle_frame (expensive)
+
+  27000       0       0       0 end idle_frame (expensive)
+
+  27000       0       0       0 pre wait
+
+  77000   50000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  77000       0       0       0 start of interact while loop
+
+  77000       0       0       0 start idle_frame (expensive)
+
+  77000       0       0       0 end idle_frame (expensive)
+
+  77000       0       0       0 pre wait
+
+ 127000   50000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 127000       0       0       0 start of interact while loop
+
+ 127000       0       0       0 start idle_frame (expensive)
+
+ 127000       0       0       0 end idle_frame (expensive)
+
+ 127000       0       0       0 pre wait
+
+ 165005   38005       0       0 post wait <Event(768-KEYDOWN {'repeat': 0, 'unicode': '', 'key': 1073741889, 'scancode': 65L, 'mod': 0})>
+
+ 165005       0       0       0 start of interact while loop
+
+ 165005       0       0       0 start idle_frame (expensive)
+
+ 165005       0       0       0 end idle_frame (expensive)
+
+ 165005       0       0       0 pre wait
+
+ 165005       0       0       0 post wait <Event(32768-UserEvent0 {})>
+
+ 166005    1000       0       0 start of interact while loop
+
+ 166005       0       0       0 start idle_frame (expensive)
+
+ 166005       0       0       0 end idle_frame (expensive)
+
+ 166005       0       0       0 pre wait
+
+ 178007   12002       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 178007       0       0       0 start of interact while loop
+
+ 178007       0       0       0 start draw_screen
+
+ 178007       0       0       0 flip
+
+ 200000       0       0       0 end frame
+
+
+
+      0       0       0       0 start frame
+
+      0       0       0       0 start idle_frame (expensive)
+
+      0       0       0       0 end idle_frame (expensive)
+
+      0       0       0       0 pre wait
+
+      0       0       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+      0       0       0       0 start of interact while loop
+
+      0       0       0       0 start idle_frame (expensive)
+
+      0       0       0       0 end idle_frame (expensive)
+
+      0       0       0       0 pre wait
+
+  38001   38001       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  38001       0       0       0 start of interact while loop
+
+  38001       0       0       0 start idle_frame (expensive)
+
+  38001       0       0       0 end idle_frame (expensive)
+
+  38001       0       0       0 pre wait
+
+  64001   26000       0       0 post wait <Event(768-KEYDOWN {'repeat': 0, 'unicode': '', 'key': 1073741889, 'scancode': 65L, 'mod': 0})>
+
+  64001       0       0       0 start of interact while loop
+
+  64001       0       0       0 start idle_frame (expensive)
+
+  64001       0       0       0 end idle_frame (expensive)
+
+  64001       0       0       0 pre wait
+
+  64001       0       0       0 post wait <Event(32768-UserEvent0 {})>
+
+  64001       0       0       0 start of interact while loop
+
+  64001       0       0       0 start idle_frame (expensive)
+
+  64001       0       0       0 end idle_frame (expensive)
+
+  64001       0       0       0 pre wait
+
+  88000   23999       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  88000       0       0       0 start of interact while loop
+
+  88000       0       0       0 start idle_frame (expensive)
+
+  88000       0       0       0 end idle_frame (expensive)
+
+  88000       0       0       0 pre wait
+
+ 138000   50000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 138000       0       0       0 start of interact while loop
+
+ 138000       0       0       0 start idle_frame (expensive)
+
+ 138000       0       0       0 end idle_frame (expensive)
+
+ 138000       0       0       0 pre wait
+
+ 188000   50000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 188000       0       0       0 start of interact while loop
+
+ 188000       0       0       0 start draw_screen
+
+ 188000       0       0       0 flip
+
+ 217009       0       0       0 end frame
+
+
+
+      0       0       0       0 start frame
+
+      0       0       0       0 start idle_frame (expensive)
+
+      0       0       0       0 end idle_frame (expensive)
+
+      0       0       0       0 pre wait
+
+      0       0       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (734, 135), 'rel': (-13, 0), 'which': 0L})>
+
+      0       0       0       0 start of interact while loop
+
+      0       0       0       0 start idle_frame (expensive)
+
+      0       0       0       0 end idle_frame (expensive)
+
+      0       0       0       0 pre wait
+
+   1997    1997       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (733, 135), 'rel': (-1, 0), 'which': 0L})>
+
+   1997       0       0       0 start of interact while loop
+
+   1997       0       0       0 start idle_frame (expensive)
+
+   1997       0       0       0 end idle_frame (expensive)
+
+   1997       0       0       0 pre wait
+
+   5996    3999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (732, 135), 'rel': (-1, 0), 'which': 0L})>
+
+   5996       0       0       0 start of interact while loop
+
+   5996       0       0       0 start idle_frame (expensive)
+
+   5996       0       0       0 end idle_frame (expensive)
+
+   5996       0       0       0 pre wait
+
+   9997    4001       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (730, 135), 'rel': (-2, 0), 'which': 0L})>
+
+   9997       0       0       0 start of interact while loop
+
+   9997       0       0       0 start idle_frame (expensive)
+
+   9997       0       0       0 end idle_frame (expensive)
+
+   9997       0       0       0 pre wait
+
+  13997    4000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (729, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  13997       0       0       0 start of interact while loop
+
+  13997       0       0       0 start idle_frame (expensive)
+
+  13997       0       0       0 end idle_frame (expensive)
+
+  13997       0       0       0 pre wait
+
+  17997    4000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  17997       0       0       0 start of interact while loop
+
+  17997       0       0       0 start idle_frame (expensive)
+
+  17997       0       0       0 end idle_frame (expensive)
+
+  17997       0       0       0 pre wait
+
+  17997       0       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (728, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  17997       0       0       0 start of interact while loop
+
+  17997       0       0       0 start idle_frame (expensive)
+
+  17997       0       0       0 end idle_frame (expensive)
+
+  17997       0       0       0 pre wait
+
+  22001    4004       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (727, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  22001       0       0       0 start of interact while loop
+
+  22001       0       0       0 start idle_frame (expensive)
+
+  22001       0       0       0 end idle_frame (expensive)
+
+  22001       0       0       0 pre wait
+
+  24000    1999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (726, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  24000       0       0       0 start of interact while loop
+
+  24000       0       0       0 start idle_frame (expensive)
+
+  24000       0       0       0 end idle_frame (expensive)
+
+  24000       0       0       0 pre wait
+
+  27996    3996       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (725, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  27996       0       0       0 start of interact while loop
+
+  27996       0       0       0 start idle_frame (expensive)
+
+  27996       0       0       0 end idle_frame (expensive)
+
+  27996       0       0       0 pre wait
+
+  32000    4004       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (724, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  32000       0       0       0 start of interact while loop
+
+  32000       0       0       0 start idle_frame (expensive)
+
+  32000       0       0       0 end idle_frame (expensive)
+
+  32000       0       0       0 pre wait
+
+  35997    3997       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (723, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  35997       0       0       0 start of interact while loop
+
+  35997       0       0       0 start idle_frame (expensive)
+
+  35997       0       0       0 end idle_frame (expensive)
+
+  35997       0       0       0 pre wait
+
+  37997    2000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (722, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  37997       0       0       0 start of interact while loop
+
+  37997       0       0       0 start idle_frame (expensive)
+
+  37997       0       0       0 end idle_frame (expensive)
+
+  37997       0       0       0 pre wait
+
+  41997    4000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (721, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  41997       0       0       0 start of interact while loop
+
+  41997       0       0       0 start idle_frame (expensive)
+
+  41997       0       0       0 end idle_frame (expensive)
+
+  41997       0       0       0 pre wait
+
+  45997    4000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (720, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  45997       0       0       0 start of interact while loop
+
+  45997       0       0       0 start idle_frame (expensive)
+
+  45997       0       0       0 end idle_frame (expensive)
+
+  45997       0       0       0 pre wait
+
+  51996    5999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (719, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  51996       0       0       0 start of interact while loop
+
+  51996       0       0       0 start idle_frame (expensive)
+
+  51996       0       0       0 end idle_frame (expensive)
+
+  51996       0       0       0 pre wait
+
+  53996    2000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (718, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  53996       0       0       0 start of interact while loop
+
+  53996       0       0       0 start idle_frame (expensive)
+
+  53996       0       0       0 end idle_frame (expensive)
+
+  53996       0       0       0 pre wait
+
+  57997    4001       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (717, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  57997       0       0       0 start of interact while loop
+
+  57997       0       0       0 start idle_frame (expensive)
+
+  57997       0       0       0 end idle_frame (expensive)
+
+  57997       0       0       0 pre wait
+
+  63996    5999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (716, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  63996       0       0       0 start of interact while loop
+
+  63996       0       0       0 start idle_frame (expensive)
+
+  63996       0       0       0 end idle_frame (expensive)
+
+  63996       0       0       0 pre wait
+
+  67997    4001       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  67997       0       0       0 start of interact while loop
+
+  67997       0       0       0 start idle_frame (expensive)
+
+  67997       0       0       0 end idle_frame (expensive)
+
+  67997       0       0       0 pre wait
+
+  67997       0       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (715, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  67997       0       0       0 start of interact while loop
+
+  67997       0       0       0 start idle_frame (expensive)
+
+  67997       0       0       0 end idle_frame (expensive)
+
+  67997       0       0       0 pre wait
+
+  69997    2000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (714, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  69997       0       0       0 start of interact while loop
+
+  69997       0       0       0 start idle_frame (expensive)
+
+  69997       0       0       0 end idle_frame (expensive)
+
+  69997       0       0       0 pre wait
+
+  76000    6003       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (713, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  76000       0       0       0 start of interact while loop
+
+  76000       0       0       0 start idle_frame (expensive)
+
+  76000       0       0       0 end idle_frame (expensive)
+
+  76000       0       0       0 pre wait
+
+  82000    6000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (712, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  82000       0       0       0 start of interact while loop
+
+  82000       0       0       0 start idle_frame (expensive)
+
+  82000       0       0       0 end idle_frame (expensive)
+
+  82000       0       0       0 pre wait
+
+  85997    3997       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (711, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  85997       0       0       0 start of interact while loop
+
+  85997       0       0       0 start idle_frame (expensive)
+
+  85997       0       0       0 end idle_frame (expensive)
+
+  85997       0       0       0 pre wait
+
+  91997    6000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (710, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  91997       0       0       0 start of interact while loop
+
+  91997       0       0       0 start idle_frame (expensive)
+
+  91997       0       0       0 end idle_frame (expensive)
+
+  91997       0       0       0 pre wait
+
+  95996    3999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (709, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  95996       0       0       0 start of interact while loop
+
+  95996       0       0       0 start idle_frame (expensive)
+
+  95996       0       0       0 end idle_frame (expensive)
+
+  95996       0       0       0 pre wait
+
+  99997    4001       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (708, 135), 'rel': (-1, 0), 'which': 0L})>
+
+  99997       0       0       0 start of interact while loop
+
+  99997       0       0       0 start idle_frame (expensive)
+
+  99997       0       0       0 end idle_frame (expensive)
+
+  99997       0       0       0 pre wait
+
+ 105996    5999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (707, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 105996       0       0       0 start of interact while loop
+
+ 105996       0       0       0 start idle_frame (expensive)
+
+ 105996       0       0       0 end idle_frame (expensive)
+
+ 105996       0       0       0 pre wait
+
+ 109997    4001       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (706, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 109997       0       0       0 start of interact while loop
+
+ 109997       0       0       0 start idle_frame (expensive)
+
+ 109997       0       0       0 end idle_frame (expensive)
+
+ 109997       0       0       0 pre wait
+
+ 111997    2000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (705, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 111997       0       0       0 start of interact while loop
+
+ 111997       0       0       0 start idle_frame (expensive)
+
+ 111997       0       0       0 end idle_frame (expensive)
+
+ 111997       0       0       0 pre wait
+
+ 116001    4004       0       0 post wait <Event(768-KEYDOWN {'repeat': 0, 'unicode': '', 'key': 1073741889, 'scancode': 65L, 'mod': 0})>
+
+ 116001       0       0       0 start of interact while loop
+
+ 116001       0       0       0 start idle_frame (expensive)
+
+ 116001       0       0       0 end idle_frame (expensive)
+
+ 116001       0       0       0 pre wait
+
+ 116001       0       0       0 post wait <Event(32768-UserEvent0 {})>
+
+ 116001       0       0       0 start of interact while loop
+
+ 116001       0       0       0 start idle_frame (expensive)
+
+ 116001       0       0       0 end idle_frame (expensive)
+
+ 116001       0       0       0 pre wait
+
+ 117997    1996       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 117997       0       0       0 start of interact while loop
+
+ 117997       0       0       0 start idle_frame (expensive)
+
+ 117997       0       0       0 end idle_frame (expensive)
+
+ 117997       0       0       0 pre wait
+
+ 117997       0       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (704, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 117997       0       0       0 start of interact while loop
+
+ 117997       0       0       0 start idle_frame (expensive)
+
+ 117997       0       0       0 end idle_frame (expensive)
+
+ 117997       0       0       0 pre wait
+
+ 121997    4000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (703, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 121997       0       0       0 start of interact while loop
+
+ 121997       0       0       0 start idle_frame (expensive)
+
+ 121997       0       0       0 end idle_frame (expensive)
+
+ 121997       0       0       0 pre wait
+
+ 127996    5999       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (702, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 127996       0       0       0 start of interact while loop
+
+ 127996       0       0       0 start idle_frame (expensive)
+
+ 127996       0       0       0 end idle_frame (expensive)
+
+ 127996       0       0       0 pre wait
+
+ 129997    2001       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (701, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 129997       0       0       0 start of interact while loop
+
+ 129997       0       0       0 start idle_frame (expensive)
+
+ 129997       0       0       0 end idle_frame (expensive)
+
+ 129997       0       0       0 pre wait
+
+ 133997    4000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (700, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 133997       0       0       0 start of interact while loop
+
+ 133997       0       0       0 start idle_frame (expensive)
+
+ 133997       0       0       0 end idle_frame (expensive)
+
+ 133997       0       0       0 pre wait
+
+ 139997    6000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (699, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 139997       0       0       0 start of interact while loop
+
+ 139997       0       0       0 start idle_frame (expensive)
+
+ 139997       0       0       0 end idle_frame (expensive)
+
+ 139997       0       0       0 pre wait
+
+ 143997    4000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (698, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 143997       0       0       0 start of interact while loop
+
+ 143997       0       0       0 start idle_frame (expensive)
+
+ 143997       0       0       0 end idle_frame (expensive)
+
+ 143997       0       0       0 pre wait
+
+ 148000    4003       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (697, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 148000       0       0       0 start of interact while loop
+
+ 148000       0       0       0 start idle_frame (expensive)
+
+ 148000       0       0       0 end idle_frame (expensive)
+
+ 148000       0       0       0 pre wait
+
+ 151997    3997       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (696, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 151997       0       0       0 start of interact while loop
+
+ 151997       0       0       0 start idle_frame (expensive)
+
+ 151997       0       0       0 end idle_frame (expensive)
+
+ 151997       0       0       0 pre wait
+
+ 157997    6000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (695, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 157997       0       0       0 start of interact while loop
+
+ 157997       0       0       0 start idle_frame (expensive)
+
+ 157997       0       0       0 end idle_frame (expensive)
+
+ 157997       0       0       0 pre wait
+
+ 161997    4000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (694, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 161997       0       0       0 start of interact while loop
+
+ 161997       0       0       0 start idle_frame (expensive)
+
+ 161997       0       0       0 end idle_frame (expensive)
+
+ 161997       0       0       0 pre wait
+
+ 163997    2000       0       0 post wait <Event(1024-MOUSEMOTION {'buttons': (0, 0, 0), 'pos': (693, 135), 'rel': (-1, 0), 'which': 0L})>
+
+ 163997       0       0       0 start of interact while loop
+
+ 163997       0       0       0 start idle_frame (expensive)
+
+ 163997       0       0       0 end idle_frame (expensive)
+
+ 163997       0       0       0 pre wait
+
+ 167997    4000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 167997       0       0       0 start of interact while loop
+
+ 167997       0       0       0 start draw_screen
+
+ 167997       0       0       0 flip
+
+ 198996       0       0       0 end frame
+
+
+
+      0       0       0       0 start frame
+
+      0       0       0       0 start idle_frame (expensive)
+
+      0       0       0       0 end idle_frame (expensive)
+
+      0       0       0       0 pre wait
+
+   5999    5999       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+   5999       0       0       0 start of interact while loop
+
+   5999       0       0       0 start idle_frame (expensive)
+
+   5999       0       0       0 end idle_frame (expensive)
+
+   5999       0       0       0 pre wait
+
+  11999    6000       0       0 post wait <Event(768-KEYDOWN {'repeat': 0, 'unicode': '', 'key': 1073741889, 'scancode': 65L, 'mod': 0})>
+
+  11999       0       0       0 start of interact while loop
+
+  11999       0       0       0 start idle_frame (expensive)
+
+  11999       0       0       0 end idle_frame (expensive)
+
+  11999       0       0       0 pre wait
+
+  11999       0       0       0 post wait <Event(32768-UserEvent0 {})>
+
+  11999       0       0       0 start of interact while loop
+
+  11999       0       0       0 start idle_frame (expensive)
+
+  11999       0       0       0 end idle_frame (expensive)
+
+  11999       0       0       0 pre wait
+
+  55999   44000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+  55999       0       0       0 start of interact while loop
+
+  55999       0       0       0 start idle_frame (expensive)
+
+  55999       0       0       0 end idle_frame (expensive)
+
+  55999       0       0       0 pre wait
+
+ 105999   50000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 105999       0       0       0 start of interact while loop
+
+ 105999       0       0       0 start idle_frame (expensive)
+
+ 105999       0       0       0 end idle_frame (expensive)
+
+ 105999       0       0       0 pre wait
+
+ 123999   18000       0       0 post wait <Event(769-KEYUP {'repeat': 0, 'unicode': '', 'key': 1073741889, 'scancode': 65L, 'mod': 0})>
+
+ 123999       0       0       0 start of interact while loop
+
+ 123999       0       0       0 start idle_frame (expensive)
+
+ 123999       0       0       0 end idle_frame (expensive)
+
+ 123999       0       0       0 pre wait
+
+ 155999   32000       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 155999       0       0       0 start of interact while loop
+
+ 155999       0       0       0 start idle_frame (expensive)
+
+ 155999       0       0       0 end idle_frame (expensive)
+
+ 155999       0       0       0 pre wait
+
+ 206019   50020       0       0 post wait <Event(32769-UserEvent1 {'code': 0})>
+
+ 206019       0       0       0 start of interact while loop
+
+ 206019       0       0       0 start draw_screen
+
+ 206019       0       0       0 flip
+
+ 248999       0       0       0 end frame
+
