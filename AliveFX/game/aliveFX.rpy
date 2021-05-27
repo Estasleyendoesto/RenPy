@@ -32,7 +32,7 @@ init python:
             self.frames = tuple(frames)
 
             self.loop  = loop  # 0 = inf
-            self.delay = delay # millis (per frame, 0.0 -> 1.0)
+            self.delay = delay # millis (per frame, 0.001 -> 1.0)
             self.rever = rever # Animación reversa
             
             # Experimental
@@ -45,8 +45,8 @@ init python:
             self.delta = 0
 
 
-        def on(self, render, x, y):
-            if self.sleeper():
+        def on(self, render, st, x, y):
+            if self.sleeper(st):
                 if self.looper():
                     self.tracker()
             
@@ -86,8 +86,22 @@ init python:
             return True
 
 
-        # Retraso para cada fotograma
-        def sleeper(self):
+        # Retraso para cada fotograma (variable)
+        def sleeper(self, st):
+            duration = self.delay
+            duration = 0.001 if not duration else duration
+
+            t = duration * 1000
+            v = len(self.frames) / t
+            d = st / v
+
+            if math.modf(d)[1] > self.sec:
+                self.sec = d
+                return True
+
+
+        # Retraso para cada fotograma (básica)
+        def sleeperOLD(self):
             self.sec += 0.1
             if self.sec > self.delay:
                 self.sec -= self.sec
