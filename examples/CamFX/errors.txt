@@ -1,0 +1,8 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/camFX.rpy", line 46: indentation mismatch.
+
+Ren'Py Version: Ren'Py 7.4.4.1439
+Fri May 28 11:37:43 2021

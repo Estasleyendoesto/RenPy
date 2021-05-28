@@ -1,6 +1,6 @@
 # Ren'Py Utils
 
-Utilidades interesantes
+Librerias que hacen lo que Ren'Py no hace y que todos quisiéramos que haga
 
 > Creado el 25-05-2021
 

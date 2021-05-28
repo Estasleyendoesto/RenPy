@@ -1,0 +1,8 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/objectFX.rpy", line 96: duplicate argument 'res' in function definition
+
+Ren'Py Version: Ren'Py 7.4.4.1439
+Fri May 28 12:30:52 2021
