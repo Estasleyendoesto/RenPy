@@ -1,6 +1,6 @@
 ﻿init python:
     config.developer = True
-    preferences.fullscreen   = True
+    preferences.fullscreen   = False
     preferences.gl_tearing   = False
     preferences.gl_framerate = 60
 

@@ -1,46 +1,45 @@
-Fri May 28 11:48:22 2021
+Sat May 29 17:00:10 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
  
 
 Bootstrap to the start of init.init took 0.13s
-Early init took 0.01s
-Loader init took 0.07s
-Loading error handling took 0.07s
-Loading script took 0.47s
-Loading save slot metadata. took 0.11s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.05s
+Loading script took 0.37s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.10s
-Loading analysis data took 0.04s
+Running init code took 0.26s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
 Dump and make backups. took 0.16s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.03s
+Initial gc. took 0.02s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
+Creating interface object took 0.03s
 Cleaning stores took 0.00s
 Init translation took 0.05s
 Build styles took 0.01s
-Load screen analysis took 0.04s
-Analyze screens took 0.02s
-Save screen analysis took 0.10s
-Prepare screens took 0.10s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.11s
+Interface start took 0.09s
 
 Initializing gl renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
-Fullscreen mode.
+Windowed mode.
 Vendor: 'ATI Technologies Inc.'
 Renderer: 'AMD Radeon HD 5450'
 Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
@@ -59,14 +58,1550 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 3.74888896942s
+Resetting cache.
+Bootstrap to the start of init.init took 204.51s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.19s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 206.938033104s
+Resetting cache.
+Bootstrap to the start of init.init took 266.97s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.18s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.08s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.17s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 269.439244986s
 Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 2.39102888107s
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init took 1001.35s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.03s
+Loading script took 0.23s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.20s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1003.97587991s
+Resetting cache.
+Bootstrap to the start of init.init took 1015.46s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.05s
+Loading script took 0.24s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1018.10488701s
+Resetting cache.
+Bootstrap to the start of init.init took 1034.03s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1036.56388187s
+Resetting cache.
+Bootstrap to the start of init.init took 1394.77s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.22s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1397.32770896s
+Resetting cache.
+Bootstrap to the start of init.init took 1408.81s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.21s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1411.30051303s
+Resetting cache.
+Bootstrap to the start of init.init took 1448.58s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1451.01361704s
+Resetting cache.
+Bootstrap to the start of init.init took 1453.38s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1455.80061889s
+Resetting cache.
+Bootstrap to the start of init.init took 1476.52s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.03s
+Loading script took 0.20s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1479.00167108s
+Resetting cache.
+Bootstrap to the start of init.init took 1502.66s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.21s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1505.06767297s
+Resetting cache.
+Bootstrap to the start of init.init took 1507.53s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1509.93518806s
+Resetting cache.
+Bootstrap to the start of init.init took 1680.58s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.24s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.08s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1683.07385492s
+Resetting cache.
+Bootstrap to the start of init.init took 1685.91s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1688.30484796s
+Resetting cache.
+Bootstrap to the start of init.init took 1751.67s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.23s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1754.23417592s
+Resetting cache.
+Bootstrap to the start of init.init took 1789.97s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1792.40817595s
+Resetting cache.
+Bootstrap to the start of init.init took 1794.87s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.19s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1797.302176s
+Resetting cache.
+Bootstrap to the start of init.init took 1810.43s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.21s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1812.94517708s
+Resetting cache.
+Bootstrap to the start of init.init took 2095.69s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.22s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2098.2356391s
+Resetting cache.
+Bootstrap to the start of init.init took 2120.31s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.25s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2122.87169194s
+Resetting cache.
+Bootstrap to the start of init.init took 2129.89s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2132.42369294s
+Resetting cache.
+Bootstrap to the start of init.init took 2140.97s
+Early init took 0.00s
+Loader init took 0.09s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2143.50469208s
+Resetting cache.
+Bootstrap to the start of init.init took 2147.51s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.03s
+Loading script took 0.21s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2150.02169108s
+Resetting cache.
+Bootstrap to the start of init.init took 2167.57s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2170.11969304s
+Resetting cache.
+Bootstrap to the start of init.init took 2241.05s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\AliveFX':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2243.63769293s
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.01s
 Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
@@ -76,13 +1611,6 @@ FBO Maximum Texture Size: 2048
 Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.01s

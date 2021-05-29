@@ -9,29 +9,28 @@
 init python:
     import cPickle
     import pygame
-
-    import time
+    import os
 
     class Resource:
         def __init__(self, image='', rect=[], mask=False):
-            self.image = image
+            self.image = image # '' = invisible mode
             self.hover = False
-            self.info  = None # Text() or image route (None = off)
-            self.mask  = mask
-            self.rect  = rect
+            self.info  = None  # Text() or image route (None = off)
+            self.mask  = mask  # optional
+            self.rect  = rect  # required
 
             if mask:
                 # Ligero retraso al abrir (puede reducirse a 0 sacrificando la predicción de renpy)
                 file = renpy.file(mask).name 
-                start = time.time()
                 self.mask = cPickle.load( open(file, 'rb') )
-                end = time.time()
-                print(end - start)
 
         def click(self, event):
             if self.hover:
                 if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                     return True
+
+        def __str__(self):
+            return os.path.splitext(self.image)[0]
 
 
     class ObjectFX:

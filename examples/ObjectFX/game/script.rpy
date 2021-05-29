@@ -1,11 +1,12 @@
 ﻿init python:
     config.developer = True
-    preferences.fullscreen   = False
+    preferences.fullscreen   = True
     preferences.gl_tearing   = False
     preferences.gl_framerate = 60
 
 
 screen magic_camera:
+    # Enable return
     default test = Test('room.jpg')
     add test
 

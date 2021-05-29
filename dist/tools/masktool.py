@@ -8,7 +8,7 @@ def compile(input):
     """
     Script que convierte una imagen con transparencia en una máscara (*.dat)
     Tengo pensado implementar un algoritmo de compresión (si renpy permite el uso de threads)
-    input = *.png|jpeg|webp
+    input = *.png (transparencia)
     """
 
     # Obtenemos la máscara de una imagen con transparencia

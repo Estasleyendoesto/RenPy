@@ -2,28 +2,24 @@
 
 While running game code:
   File "game/script.rpy", line 32, in script
-    call screen magic_camera with dissolve
+    call screen magic_camera
   File "renpy/common/000statements.rpy", line 570, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/script.rpy", line 8, in execute
-    screen magic_camera:
-  File "game/script.rpy", line 8, in execute
-    screen magic_camera:
-  File "game/script.rpy", line 9, in execute
-    add Test('fondo.jpg')
-  File "game/script.rpy", line 9, in <module>
-    add Test('fondo.jpg')
-  File "game/scenes.rpy", line 15, in __init__
-    self.alivefx = AliveFX('nigga.res', 0.420)
-  File "game/aliveFX.rpy", line 26, in __init__
-    self.frames.append( io.BytesIO(base64.b64decode( frame )) )
-AttributeError: 'AliveFX' object has no attribute 'frames'
+  File "game/engine.rpy", line 20, in render
+    self.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 26, in on_draw
+    self.nigga.on(render, st, 860 - x, 470 - y)
+  File "game/aliveFX.rpy", line 55, in on
+    frame = self.optimize()
+  File "game/aliveFX.rpy", line 44, in optimize
+    frame = pygame.image.load_extended(frame).convert_alpha()
+AttributeError: 'module' object has no attribute 'load_extended'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "game/script.rpy", line 32, in script
-    call screen magic_camera with dissolve
+    call screen magic_camera
   File "renpy/ast.py", line 1969, in execute
     self.call("execute")
   File "renpy/ast.py", line 1957, in call
@@ -38,39 +34,43 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "renpy/display/core.py", line 3101, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3512, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/screen.py", line 432, in visit_all
-    callback(self)
-  File "renpy/display/core.py", line 3512, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/screen.py", line 443, in per_interact
-    self.update()
-  File "renpy/display/screen.py", line 631, in update
-    self.screen.function(**self.scope)
-  File "game/script.rpy", line 8, in execute
-    screen magic_camera:
-  File "game/script.rpy", line 8, in execute
-    screen magic_camera:
-  File "game/script.rpy", line 9, in execute
-    add Test('fondo.jpg')
-  File "game/script.rpy", line 9, in <module>
-    add Test('fondo.jpg')
-  File "game/scenes.rpy", line 15, in __init__
-    self.alivefx = AliveFX('nigga.res', 0.420)
-  File "game/aliveFX.rpy", line 26, in __init__
-    self.frames.append( io.BytesIO(base64.b64decode( frame )) )
-AttributeError: 'AliveFX' object has no attribute 'frames'
+  File "renpy/display/core.py", line 3611, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2441, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "game/engine.rpy", line 20, in render
+    self.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 26, in on_draw
+    self.nigga.on(render, st, 860 - x, 470 - y)
+  File "game/aliveFX.rpy", line 55, in on
+    frame = self.optimize()
+  File "game/aliveFX.rpy", line 44, in optimize
+    frame = pygame.image.load_extended(frame).convert_alpha()
+AttributeError: 'module' object has no attribute 'load_extended'
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 AliveFX 1.0
-Thu May 27 20:57:29 2021
+Sat May 29 01:07:52 2021
