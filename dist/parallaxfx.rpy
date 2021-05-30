@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # name: ParallaxFX
-# version: 2.1
+# version: 2.3
 # description: Parallax Effect for Ren'Py Engine
 # author: Estasleyendoesto
 # site: https://github.com/Estasleyendoesto/RenPy
@@ -9,7 +9,7 @@
 init python:
     class Layer:
         """
-        Es importante para el funcionamiento de ParallaxFX
+        It is important for Parallaxfx to function properly.
         """
 
         def __init__(self, bg, delay=0.00):
@@ -20,19 +20,19 @@ init python:
             self.oldy = 0
 
 
-    class ParallaxFX:
+    class Parallaxfx:
         """
-        Si última capa es "inestable" o "vibra", delay 0.0 para corregirlo
-        Importante definir la velocidad de desplazamiento para cada layer
-        Puede seleccionar aplicar el efecto en el eje x, y o ambos juntos
-        Podría definirse una velocidad distinta para x e y (en desarrollo)
+        If last layer is "unstable" or "vibrates", delay 0.0 to correct it.
+        Important to define the displacement speed for each layer.
+        You can select to apply the effect on x-axis, y-axis or both together.
+        Different speed could be defined for x and y (in development)
 
-        Constructor recibe como parámetros:
-            - CamFX object (requerido)
+        Constructor receives as parameters:
+            - Camfx object (required)
 
-        El método add recibe como parámetros:
-            - bg    = '*.png|jpeg|webp'
-            - delay = 0.00 (0 = misma velocidad que la cámara)
+        Add method receives as parameters:
+            - bg = '*.png|jpeg|webp'
+            - delay = 0.00 (0 = same speed as camera)
         """
 
         def __init__(self, camfx):
@@ -47,11 +47,12 @@ init python:
                 return renpy.load_image( Image(bg) )
             return bg
 
-        def on(self, render):
+        def draw(self, render):
             width, height = render.get_size()
-            x, y, dx, dy, mouseX, mouseY = self.camfx.meta()
+            x, y, dx, dy, mouseX, mouseY = self.camfx.meta
 
             for layer in self.layers:
+                # custom speed
                 if self.x_on:
                     x += dx * layer.delay
                 if self.y_on:
@@ -63,7 +64,9 @@ init python:
                 else:
                     x, y = layer.oldx, layer.oldy
  
+                # progresive loader
                 layer.bg = self.optimize(layer.bg)
+                # cut and draw
                 bg = layer.bg.subsurface( (x, y, width, height) )
                 render.blit(bg, (0, 0))
 

@@ -1,22 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # name: CamFX
-# version: 1.8
+# version: 1.9
 # description: Camera effect for Ren'Py Engine
 # author: Estasleyendoesto
 # site: https://github.com/Estasleyendoesto/RenPy
 
 init python:
-
-    class CamFX:
+    class Camfx:
         """
-        Simulador de efecto cámara basado en Creator-Defined Displayables
-        El constructor recibe lo siguiente:
-            - bg    = '*.png|jpeg|webp' (requerido)
-            - speed = 0.000 (velocidad de desplazamiento)
+        Camera effect simulator based on Creator-Defined Displayables
+        The constructor receives the following:
+            - bg = '*.png|jpeg|webp' (required)
+            - speed = 0.000 (scroll speed)
 
-        El método meta devuelve lo necesario para sus propias integraciones
-        *efecto Dissolve para transición no se aconseja su uso
+        The meta method returns what is required for its own integrations.
+        *Dissolve effect for transition not recommended
         """
 
         def __init__(self, bg, speed = 0.001):
@@ -38,7 +37,7 @@ init python:
 
             self.speed = speed
         
-        def fx_on(self, render):
+        def draw(self, render):
             # true size of the box
             width, height = render.get_size()
             relw = (self.bgsize[0] - width) * self.mouseX // width
@@ -64,5 +63,6 @@ init python:
             self.mouseX = x
             self.mouseY = y
         
+        @property
         def meta(self):
             return (self.x, self.y, self.dx, self.dy, self.mouseX, self.mouseY)

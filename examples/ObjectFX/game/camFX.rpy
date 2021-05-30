@@ -38,7 +38,7 @@ init python:
 
             self.speed = speed
         
-        def fx_on(self, render):
+        def draw(self, render):
             # true size of the box
             width, height = render.get_size()
             relw = (self.bgsize[0] - width) * self.mouseX // width
@@ -64,5 +64,6 @@ init python:
             self.mouseX = x
             self.mouseY = y
         
+        @property
         def meta(self):
             return (self.x, self.y, self.dx, self.dy, self.mouseX, self.mouseY)

@@ -1,14 +1,14 @@
-Fri May 28 11:08:54 2021
+Mon May 31 00:52:51 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
  
 
-Bootstrap to the start of init.init took 0.14s
+Bootstrap to the start of init.init took 0.13s
 Early init took 0.00s
-Loader init took 0.06s
+Loader init took 0.05s
 Loading error handling took 0.03s
-Loading script took 0.20s
-Loading save slot metadata. took 0.04s
+Loading script took 0.23s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.10s
@@ -18,14 +18,14 @@ Index archives took 0.00s
 Dump and make backups. took 0.14s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.03s
+Initial gc. took 0.02s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.01s
 Cleaning stores took 0.00s
 Init translation took 0.05s
-Build styles took 0.00s
+Build styles took 0.01s
 Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
@@ -61,14 +61,7 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1.83100104332s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
+Total time until interface ready: 1.68000006676s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.01s

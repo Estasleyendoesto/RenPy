@@ -18,13 +18,13 @@ init python:
     import math
     import io
     
-    class AliveFX:
+    class Alivefx:
         """
-        AliveFX es una herramienta para el desplegado de secuencias de imágenes.
-        Puede usarse en su propio displayable o junto a CamFX con sus funcionalidades.
-        Activando landscape puede usarse en modo fondo animado.
-        El constructor puede recibir lo siguiente:
-            - res = '*.res' (requerido)
+        Alivefx is a tool for displaying image sequences.
+        It can be used on its own displayable or together with Camfx with its functionalities.
+        By activating landscape it can be used in animated background mode.
+        The constructor can receive the following:
+            - res = '*.res' (required)
             - delay = 0.000
             - loop = 0
             - rever = False
@@ -32,8 +32,7 @@ init python:
         """
 
         def __init__(self, res, delay=0.0, loop=0, rever=False, landscape=False):
-            file = renpy.file(res).name 
-            # ...
+            file = config.basedir + "/game\\" + res
             res  = cPickle.load( open(file, 'rb') )
             self.frames = [ io.BytesIO(base64.b64decode( frame )) for frame in res ]
 
@@ -68,6 +67,7 @@ init python:
 
         def tracker(self):
             if self.rever:
+                # start = +1, end = -1
                 if self.pos == 0 : self.delta = 1
                 if self.pos == len(self.frames) - 1 : self.delta = -1
                 self.pos += self.delta
@@ -76,6 +76,7 @@ init python:
 
         def looper(self):
             if self.loop:
+                # num of repeats
                 if self.times < self.loop + 1:  # Little cheat
                     if not self.pos:
                         self.times += 1
@@ -87,18 +88,18 @@ init python:
         def sleeper(self, st):
             duration = self.delay
             duration = 0.001 if not duration else duration
-
+            # custom acceleration equation
             t = duration * 1000
             v = len(self.frames) / t
             d = st / v
-
+            # eval integer
             if math.modf(d)[1] > self.sec:
                 self.sec = d
                 return True
 
         def optimize(self):
             frame = self.frames[self.pos]
-
+            # progresive loader
             if isinstance(frame, io.BytesIO):
                 frame = pygame.image.load(frame)
                 self.frames[self.pos] = frame

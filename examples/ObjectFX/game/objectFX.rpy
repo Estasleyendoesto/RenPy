@@ -1,88 +1,93 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # name: objectFX
-# version: 2.7
+# version: 3.1
 # description: Objects insertion for camFX engine
 # author: Estasleyendoesto
 # site: https://github.com/Estasleyendoesto/RenPy
 
 init python:
-    import cPickle
     import pygame
-    import os
 
     class Resource:
-        def __init__(self, image='', rect=[], mask=False):
-            self.image = image # '' = invisible mode
+        _ev = None
+
+        def __init__(self, image, x=0, y=0):
+            self.image = renpy.displayable(image)
+            self.rect  = [x, y]
+            self.info  = None
             self.hover = False
-            self.info  = None  # Text() or image route (None = off)
-            self.mask  = mask  # optional
-            self.rect  = rect  # required
 
-            if mask:
-                # Ligero retraso al abrir (puede reducirse a 0 sacrificando la predicción de renpy)
-                file = renpy.file(mask).name 
-                self.mask = cPickle.load( open(file, 'rb') )
-
-        def click(self, event):
-            if self.hover:
-                if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                    return True
-
-        def __str__(self):
-            return os.path.splitext(self.image)[0]
+        @property
+        def click(self):
+            try:
+                ev = Resource._ev
+                if ev.type == pygame.MOUSEBUTTONDOWN and ev.button == 1:
+                    return True if self.hover else False
+            except:
+                pass
 
 
-    class ObjectFX:
-        def __init__(self, cam):
+    class Objectfx:
+        def __init__(self, cam=None):
             self.cam = cam
             self.res = []
+            self.aux = []
 
-        def fx_on(self, render):
+        def draw(self, render):
+            w, h = render.get_size()
             for res in self.res:
-                self.draw(render, res)
+                ren = renpy.render(res.image, w, h, 0.0, 0.0)
+                if len(res.rect) < 4:
+                    res.rect.extend(ren.get_size())
+
+                if self.cam:
+                    x, y = [a-b for a,b in zip(res.rect[:2], self.cam.meta[:2])]    
+                else:
+                    x, y = res.rect[:2]
+
+                render.blit(ren, (x, y))
+                # collision
+                self._event(res, ren, x, y)
+
+            # floating text
             for res in self.res:
                 self.info(render, res)
 
-        def draw(self, render, res):
-            # Interpretation of X and Y
-            x, y = [a - b for a, b in zip(res.rect[:2], self.cam.meta()[:2])]
-            if res.image:
-                re = renpy.load_image(Image(res.image))
-                render.blit(re, (x, y))
+        def event(self, ev, x, y):
+            self.aux = [ev, x, y]
 
-            self.event(res, x, y)
-
-        def event(self, res, x, y):
-            mouseX, mouseY = self.cam.meta()[-2:]
-            width, height  = res.rect[-2:]
-
-            # Rect Collision
-            if (mouseX > x and mouseX < x + width) and (mouseY > y and mouseY < y + height):
-                # Mask Collision
-                if res.mask:
-                    binx, biny = int(mouseX - x), int(mouseY - y)
+        def _event(self, res, ren, x, y):
+            try:
+                ev, mx, my = self.aux
+                w, h = res.rect[-2:]
+                # Rect Collision
+                if x <= mx < x+w and y <= my < y+h:
+                    # Mask collission
+                    binx, biny = int(mx-x), int(my-y)
                     if binx > 0 and biny > 0:
-                        res.hover = True and res.mask[biny][binx] or False
+                        res.hover = ren.is_pixel_opaque(binx, biny)
                 else:
-                    res.hover = True
-            else:
-                res.hover = False
+                    res.hover = False
+                # click
+                Resource._ev = ev
+            except:
+                pass
 
         def info(self, render, res):
             if res.info and res.hover:
-                d = renpy.displayable(res.info) 
                 # render from displayable
+                d = renpy.displayable(res.info) 
                 width, height = render.get_size()
                 info = renpy.render(d, width, height, 0, 0)
                 
                 size = info.get_size()
-                x, y = self.cam.meta()[-2:]
+                x, y = self.aux[-2:]
                 # custom location (you can edit this)
                 x -= size[0]
                 y -= size[1]
-
+                # draw render
                 render.blit(info, (x, y))
 
-        def add(self, *res):
-            self.res.append( Resource(*res) )
+        def add(self, *resource):
+            self.res.append( Resource(*resource) )

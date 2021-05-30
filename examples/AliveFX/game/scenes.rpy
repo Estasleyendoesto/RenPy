@@ -45,12 +45,14 @@ init 1 python:
             self.camfx = CamFX( bg, 0.05 )
             self.alivefx = AliveFX('res/landscape.res', 0.78)
             self.alivefx.landscape = True
+            self.lisa  = AliveFX('res/lisa.res', 0.080)
 
         def on_draw(self, render, width, height, st):
             self.camfx.fx_on(render)
 
             x, y = self.camfx.meta()[:2]
             self.alivefx.on(render, st, x, y)
+            self.lisa.on(render, st, 900 - x, 493 - y)
 
         def on_event(self, event, x, y, st):
             self.camfx.mouse(x, y)

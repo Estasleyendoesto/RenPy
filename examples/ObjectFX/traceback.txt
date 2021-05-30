@@ -1,20 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 24, in script
+  File "game/script.rpy", line 25, in script
     call screen magic_camera
   File "renpy/common/000statements.rpy", line 570, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/engine.rpy", line 29, in event
-    return self.scene.on_event(ev, x, y, st)
-  File "game/scenes.rpy", line 29, in on_event
-    b = self.objfx.res.index('dog1')
-ValueError: u'dog1' is not in list
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 10, in execute
+    default test = Test('room.jpg')
+  File "game/script.rpy", line 10, in <module>
+    default test = Test('room.jpg')
+  File "game/scenes.rpy", line 9, in __init__
+    objfx.add('dog2.png', 1003, 700)
+NameError: global name 'objfx' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 24, in script
+  File "game/script.rpy", line 25, in script
     call screen magic_camera
   File "renpy/ast.py", line 1969, in execute
     self.call("execute")
@@ -30,25 +36,35 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "renpy/display/core.py", line 3101, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3910, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/display/screen.py", line 720, in event
-    rv = self.child.event(ev, x, y, st)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "game/engine.rpy", line 29, in event
-    return self.scene.on_event(ev, x, y, st)
-  File "game/scenes.rpy", line 29, in on_event
-    b = self.objfx.res.index('dog1')
-ValueError: u'dog1' is not in list
+  File "renpy/display/core.py", line 3512, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 432, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3512, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 443, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 631, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 10, in execute
+    default test = Test('room.jpg')
+  File "game/script.rpy", line 10, in <module>
+    default test = Test('room.jpg')
+  File "game/scenes.rpy", line 9, in __init__
+    objfx.add('dog2.png', 1003, 700)
+NameError: global name 'objfx' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 ObjectFX 1.0
-Fri May 28 16:29:10 2021
+Sun May 30 23:36:01 2021
