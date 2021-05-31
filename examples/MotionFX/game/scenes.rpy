@@ -16,7 +16,7 @@ init 1 python:
         def on_event(self, e, x, y, st):
             self.motion.event(e, x, y, st)
             if e.type == pygame.MOUSEBUTTONDOWN and e.button == 1:
-                self.motion.dissolve('pepe.png', 7.0, id=1)
+                self.motion.dissolve('pepe.png', time=3.0, id=1, unique=True)
 
         def on_update(self, st):
             pass

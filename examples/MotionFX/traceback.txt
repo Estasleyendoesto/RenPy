@@ -11,9 +11,9 @@ While running game code:
     self.motion.draw(render, st)
   File "game/motionfx.rpy", line 40, in draw
     method( index, render, st, **motion.props )
-  File "game/motionfx.rpy", line 91, in _dissolve
-    re = renpy.render(d, width, height, st, 0)
-UnboundLocalError: local variable 'd' referenced before assignment
+  File "game/motionfx.rpy", line 93, in _dissolve
+    render.blit(re, (0,0))
+UnboundLocalError: local variable 're' referenced before assignment
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -66,11 +66,11 @@ Full traceback:
     self.motion.draw(render, st)
   File "game/motionfx.rpy", line 40, in draw
     method( index, render, st, **motion.props )
-  File "game/motionfx.rpy", line 91, in _dissolve
-    re = renpy.render(d, width, height, st, 0)
-UnboundLocalError: local variable 'd' referenced before assignment
+  File "game/motionfx.rpy", line 93, in _dissolve
+    render.blit(re, (0,0))
+UnboundLocalError: local variable 're' referenced before assignment
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 MotionFX 1.0
-Mon May 31 14:47:19 2021
+Mon May 31 16:26:01 2021

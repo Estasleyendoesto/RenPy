@@ -57,7 +57,7 @@ init python:
                     object.items -= 1
                     self.motion.append(Motion(object.id, 1, dict))
 
-        def dissolve(self, image, time, unique=None, id=None, items=None):
+        def dissolve(self, image, time, unique=None, **kwargs):
             dict = {
                 'image': image,
                 'time' : time,
@@ -65,8 +65,7 @@ init python:
                 'unique': unique,
                 'method': '_dissolve'
             }
-            
-            self.attach(dict, id, items)
+            self.attach(dict, **kwargs)
 
         def _dissolve(self, index, render, st, **props):
             width, height = render.get_size()
@@ -80,85 +79,15 @@ init python:
                 start  = -1.0                 # 1.0 al revés
                 end    = 8 / 256.0
                 offset = start + (end - start) * limit
-
-                d = Transform(child=image, alpha=offset)     
+                d = Transform(child=image, alpha=offset)
             else:
                 if not props['unique']:
                     self.motion.pop(index)
+                    return None
                 else:
                     d = renpy.displayable(image)
-
-            re = renpy.render(d, width, height, st, 0)
+            re = renpy.render(d, width, height, 0, 0)
             render.blit(re, (0,0))
-
-                
-
-            """
-                self.motion[index].props['offset'] = offset
-            
-
-            offset = self.motion[index].props['offset']
-            render.place( Text( str(offset) ), x=10, y=10 )
-
-            if st < init + time:
-                # render.place( Text( str('ahoy!!') ), x=10, y=10 )
-                
-            else:
-            """  
-
 
     # render.place( Text( str(st) ), x=10, y=10 )
 
-
-
-    class MotionFXa:
-        def __init__(self):
-            self.motion = None
-            self.event = False
-            self.aux = None
-
-            self.store = []
-
-        def on(self, render, st):
-            self.render = render
-            self.st = st
-
-            if self.motion:
-                method = getattr(self, self.motion[0])
-                args = self.motion[1:] + [render, st]
-                method(*args)
-
-            if self.store:
-                pass
-
-        def dissolve(self, image, time):
-            self.event  = True
-            self.motion = ['_dissolve', image, time]
-            
-        def _dissolve(self, image, time, render, st):
-            width, height = render.get_size()
-
-            # Falta arreglar con aux (pero la idea funciona)
-            # aux contiene el tiempo que debe alcanzar st para terminar la animación
-            # el problema es que al terminar el tiempo desaparece la imagen
-            # si se corrigen los problemas anteriores se corrige este y de los futuros motions
-            # también está el optimizar la carga de la imagen (si renpy no lo hace, verificar)
-            if not self.aux:
-                self.aux = st + time
-
-            if st > self.aux:
-                pass
-
-
-            if st > time + self.aux:
-                self.motion = None
-                self.aux = None
-
-            limit  = st / time
-            start  = -1.0
-            end    = 8 / 256.0
-            offset = start + (end - start) * limit
-
-            t  = Transform(child=image, alpha=offset)
-            re = renpy.render(t, width, height, st, 0)
-            render.blit(re, (0,0))
