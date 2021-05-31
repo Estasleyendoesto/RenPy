@@ -49,7 +49,7 @@ init python:
             self.times = 0
             self.delta = 0
             
-        def on(self, render, st, x, y):
+        def draw(self, render, st, x, y):
             if self.sleeper(st):
                 if self.looper():
                     self.tracker()

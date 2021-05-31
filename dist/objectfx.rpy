@@ -73,11 +73,12 @@ init python:
                 self.info(render, res)
 
         def event(self, ev, x, y):
-            self.aux = [ev, x, y]
+            Resource._ev = ev
+            self.aux = [x, y]
 
         def _event(self, res, ren, x, y):
             try:
-                ev, mx, my = self.aux
+                mx, my = self.aux
                 w, h = res.rect[-2:]
                 # Rect Collision
                 if x <= mx < x+w and y <= my < y+h:
@@ -87,8 +88,6 @@ init python:
                         res.hover = ren.is_pixel_opaque(binx, biny)
                 else:
                     res.hover = False
-                # click event
-                Resource._ev = ev
             except:
                 pass
 

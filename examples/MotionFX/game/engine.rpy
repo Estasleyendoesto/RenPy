@@ -1,17 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # name: EngineFX
-# version: 1.7
+# version: 1.45
 # description: Scene engine for Ren'Py Engine
 # author: Estasleyendoesto
 # site: https://github.com/Estasleyendoesto/RenPy
 
 init python:
+    """
+    Creator-Defined Displayable básico que renderiza una escena precargada
+    """
     class Engine(renpy.Displayable):
-        """
-        Basic Creator-Defined Displayable rendering a preloaded scene
-        """
-
         scene = None
 
         def __init__(self, **kwargs):
@@ -21,7 +20,7 @@ init python:
             render = renpy.Render(width, height)
             
             Engine.scene.on_update(st)
-            Engine.scene.on_draw(render, width, height, st)
+            Engine.scene.on_draw(render, width, height, st, at)
 
             renpy.redraw(self, 0)
             return render
@@ -34,16 +33,15 @@ init python:
 
 
 init python:
+    """
+    Objeto abstracto, hereda de Engine y autoasigna la escena a renderizar
+    """
     class Scene(Engine):
-        """
-        Abstract object, inherits from Engine and self-assigns the scene to be rendered
-        """
-
         def __init__(self, **kwargs):
             super(Scene, self).__init__(**kwargs)
             Engine.scene = self
 
-        def on_draw(self, render, width, height, st):
+        def on_draw(self, render, width, height, st, at):
             pass
 
         def on_event(self, event, x, y, st):
