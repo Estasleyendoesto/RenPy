@@ -2,8 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/motionfx.rpy", line 68: is not terminated with a newline. (Check strings and parenthesis.)
-                        self.motion.append(Motion(
+File "game/motionfx.rpy", line 96: invalid syntax
+                    if !props['reverse']:
+                        ^
+    
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Mon May 31 12:59:39 2021
+Mon May 31 20:21:29 2021

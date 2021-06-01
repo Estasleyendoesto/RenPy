@@ -6,7 +6,6 @@ init 1 python:
         def __init__(self, bg, **kwargs):
             super(Test, self).__init__(**kwargs)
             self.bg = renpy.load_image(Image(bg))
-
             self.motion = Motionfx()
 
         def on_draw(self, render, width, height, st, at):
@@ -16,7 +15,7 @@ init 1 python:
         def on_event(self, e, x, y, st):
             self.motion.event(e, x, y, st)
             if e.type == pygame.MOUSEBUTTONDOWN and e.button == 1:
-                self.motion.dissolve('pepe.png', time=3.0, id=1, unique=True)
+                self.motion.dissolve('pepe.png', time=3.0, id=1)
 
         def on_update(self, st):
             pass

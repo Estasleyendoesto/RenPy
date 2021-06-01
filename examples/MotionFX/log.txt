@@ -1,737 +1,58 @@
-Mon May 31 15:58:54 2021
+Mon May 31 19:42:04 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
  
 
-Bootstrap to the start of init.init took 0.42s
-Early init took 0.02s
-Loader init took 0.09s
-Loading error handling took 0.51s
-Loading script took 4.78s
-Loading save slot metadata. took 0.54s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
- - Init at renpy/common/00updater.rpy:23 took 0.54901 s.
- - Init at game/gui.rpy:11 took 0.37900 s.
-Running init code took 1.12s
-Loading analysis data took 0.12s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.71s
-Cleaning cache took 0.00s
-Making clean stores took 0.02s
-Initial gc. took 0.07s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.11s
-Cleaning stores took 0.00s
-Init translation took 0.21s
-Build styles took 0.03s
-Load screen analysis took 0.08s
-Analyze screens took 0.08s
-Save screen analysis took 0.29s
-Prepare screens took 0.42s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.11s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.25s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 16.8746860027s
-
-Full traceback:
-  File "game/script.rpy", line 24, in script
-    call screen magic_camera
-  File "renpy/ast.py", line 1969, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 1957, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/exports.py", line 2983, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3101, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3910, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/display/screen.py", line 720, in event
-    rv = self.child.event(ev, x, y, st)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "game/engine.rpy", line 29, in event
-    return Engine.scene.on_event(ev, x, y, st)
-  File "game/scenes.rpy", line 19, in on_event
-    self.motion.dissolve('pepe.png', 7.0, id=1)
-TypeError: dissolve() got an unexpected keyword argument 'id'
-
-While running game code:
-  File "game/script.rpy", line 24, in script
-    call screen magic_camera
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/engine.rpy", line 29, in event
-    return Engine.scene.on_event(ev, x, y, st)
-  File "game/scenes.rpy", line 19, in on_event
-    self.motion.dissolve('pepe.png', 7.0, id=1)
-TypeError: dissolve() got an unexpected keyword argument 'id'
-Resetting cache.
-Bootstrap to the start of init.init took 62.90s
-Early init took 0.01s
-Loader init took 0.07s
-Loading error handling took 0.09s
-Loading script took 0.73s
-Loading save slot metadata. took 0.08s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.28s
-Loading analysis data took 0.10s
-Analyze and compile ATL took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.56s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.19s
-Build styles took 0.03s
-Load screen analysis took 0.00s
-Analyze screens took 0.10s
-Save screen analysis took 0.38s
-Prepare screens took 0.35s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.11s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 72.1921439171s
-
-Full traceback:
-  File "game/script.rpy", line 24, in script
-    call screen magic_camera
-  File "renpy/ast.py", line 1969, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 1957, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/exports.py", line 2983, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3101, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3611, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2441, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/screen.py", line 681, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "game/engine.rpy", line 23, in render
-    Engine.scene.on_draw(render, width, height, st, at)
-  File "game/scenes.rpy", line 14, in on_draw
-    self.motion.draw(render, st)
-  File "game/motionfx.rpy", line 40, in draw
-    method( index, render, st, **motion.props )
-  File "game/motionfx.rpy", line 91, in _dissolve
-    re = renpy.render(d, width, height, st, 0)
-UnboundLocalError: local variable 'd' referenced before assignment
-
-While running game code:
-  File "game/script.rpy", line 24, in script
-    call screen magic_camera
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/engine.rpy", line 23, in render
-    Engine.scene.on_draw(render, width, height, st, at)
-  File "game/scenes.rpy", line 14, in on_draw
-    self.motion.draw(render, st)
-  File "game/motionfx.rpy", line 40, in draw
-    method( index, render, st, **motion.props )
-  File "game/motionfx.rpy", line 91, in _dissolve
-    re = renpy.render(d, width, height, st, 0)
-UnboundLocalError: local variable 'd' referenced before assignment
-Resetting cache.
-Bootstrap to the start of init.init took 476.48s
-Early init took 0.01s
-Loader init took 0.07s
-Loading error handling took 0.07s
-Loading script took 0.68s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.15s
-Loading analysis data took 0.08s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.49s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.12s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.24s
-Build styles took 0.03s
-Load screen analysis took 0.00s
-Analyze screens took 0.07s
-Save screen analysis took 0.20s
-Prepare screens took 0.32s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.10s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 485.174566031s
-
-Full traceback:
-  File "game/script.rpy", line 24, in script
-    call screen magic_camera
-  File "renpy/ast.py", line 1969, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 1957, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/exports.py", line 2983, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3101, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3611, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2441, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/screen.py", line 681, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "game/engine.rpy", line 23, in render
-    Engine.scene.on_draw(render, width, height, st, at)
-  File "game/scenes.rpy", line 14, in on_draw
-    self.motion.draw(render, st)
-  File "game/motionfx.rpy", line 40, in draw
-    method( index, render, st, **motion.props )
-  File "game/motionfx.rpy", line 73, in _dissolve
-    image, init, time = props.fromkeys('image', 'start', 'time')
-TypeError: fromkeys expected at most 2 arguments, got 3
-
-While running game code:
-  File "game/script.rpy", line 24, in script
-    call screen magic_camera
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/engine.rpy", line 23, in render
-    Engine.scene.on_draw(render, width, height, st, at)
-  File "game/scenes.rpy", line 14, in on_draw
-    self.motion.draw(render, st)
-  File "game/motionfx.rpy", line 40, in draw
-    method( index, render, st, **motion.props )
-  File "game/motionfx.rpy", line 73, in _dissolve
-    image, init, time = props.fromkeys('image', 'start', 'time')
-TypeError: fromkeys expected at most 2 arguments, got 3
-Resetting cache.
-Bootstrap to the start of init.init took 861.55s
-Early init took 0.01s
-Loader init took 0.05s
-Loading error handling took 0.06s
-Loading script took 0.67s
-Loading save slot metadata. took 0.09s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.17s
-Loading analysis data took 0.09s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.42s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.12s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.18s
-Build styles took 0.02s
-Load screen analysis took 0.00s
-Analyze screens took 0.05s
-Save screen analysis took 0.21s
-Prepare screens took 0.27s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.10s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 870.003900051s
-
-Full traceback:
-  File "game/script.rpy", line 24, in script
-    call screen magic_camera
-  File "renpy/ast.py", line 1969, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 1957, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/exports.py", line 2983, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3101, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3611, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2441, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/screen.py", line 681, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "game/engine.rpy", line 23, in render
-    Engine.scene.on_draw(render, width, height, st, at)
-  File "game/scenes.rpy", line 14, in on_draw
-    self.motion.draw(render, st)
-  File "game/motionfx.rpy", line 40, in draw
-    method( index, render, st, **motion.props )
-  File "game/motionfx.rpy", line 89, in _dissolve
-    render.blit(re, (0,0))
-UnboundLocalError: local variable 're' referenced before assignment
-
-While running game code:
-  File "game/script.rpy", line 24, in script
-    call screen magic_camera
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/engine.rpy", line 23, in render
-    Engine.scene.on_draw(render, width, height, st, at)
-  File "game/scenes.rpy", line 14, in on_draw
-    self.motion.draw(render, st)
-  File "game/motionfx.rpy", line 40, in draw
-    method( index, render, st, **motion.props )
-  File "game/motionfx.rpy", line 89, in _dissolve
-    render.blit(re, (0,0))
-UnboundLocalError: local variable 're' referenced before assignment
-Resetting cache.
-Bootstrap to the start of init.init took 1069.08s
-Early init took 0.01s
-Loader init took 0.05s
-Loading error handling took 0.06s
-Loading script took 0.47s
-Loading save slot metadata. took 0.10s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.21s
-Loading analysis data took 0.08s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.37s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.12s
-Build styles took 0.02s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.16s
-Prepare screens took 0.26s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.11s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 1077.19023299s
-Resetting cache.
-Bootstrap to the start of init.init took 1325.69s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.04s
-Loading script took 0.33s
-Loading save slot metadata. took 0.04s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.11s
-Loading analysis data took 0.06s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.24s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.13s
-Prepare screens took 0.16s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.07s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 1333.02764392s
-Resetting cache.
-Bootstrap to the start of init.init took 1365.44s
-Early init took 0.01s
-Loader init took 0.04s
-Loading error handling took 0.07s
-Loading script took 0.51s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.13s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.32s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.11s
-Build styles took 0.02s
-Load screen analysis took 0.00s
-Analyze screens took 0.05s
-Save screen analysis took 0.19s
-Prepare screens took 0.24s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.08s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 1373.34624195s
-Resetting cache.
-Bootstrap to the start of init.init took 1393.26s
+Bootstrap to the start of init.init took 0.13s
 Early init took 0.00s
 Loader init took 0.06s
-Loading error handling took 0.25s
-Loading script took 0.66s
-Loading save slot metadata. took 0.05s
+Loading error handling took 0.03s
+Loading script took 0.30s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.15s
-Loading analysis data took 0.08s
-Analyze and compile ATL took 0.01s
+Running init code took 0.10s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.39s
+Dump and make backups. took 0.15s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.10s
+Initial gc. took 0.02s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.17s
-Build styles took 0.03s
+Init translation took 0.05s
+Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.24s
-Prepare screens took 0.23s
-Save pyanalysis. took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.12s
 Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.10s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
 Display Info: None
-Number of texture units: 16
+Number of texture units: 18
 Using shader environment.
 Using FBO RTT.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 Using gl renderer.
 Texture testing:
-- Hardware max texture size: 8192
+- Hardware max texture size: 16384
 - 64px textures work.
 - 128px textures work.
 - 256px textures work.
@@ -741,58 +62,66 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1401.81525302s
+Total time until interface ready: 2.16799497604s
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
 Resetting cache.
-Bootstrap to the start of init.init took 1419.92s
-Early init took 0.01s
-Loader init took 0.07s
-Loading error handling took 0.07s
-Loading script took 0.53s
-Loading save slot metadata. took 0.07s
+Bootstrap to the start of init.init took 21.31s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.16s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.42s
+Dump and make backups. took 0.17s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.09s
+Initial gc. took 0.04s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.15s
+Init translation took 0.06s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.05s
-Save screen analysis took 0.21s
-Prepare screens took 0.21s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.08s
+Interface start took 0.04s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
 Display Info: None
-Number of texture units: 16
+Number of texture units: 18
 Using shader environment.
 Using FBO RTT.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 Using gl renderer.
 Texture testing:
-- Hardware max texture size: 8192
+- Hardware max texture size: 16384
 - 64px textures work.
 - 128px textures work.
 - 256px textures work.
@@ -802,13 +131,92 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1428.07779408s
+Total time until interface ready: 22.5539939404s
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
 Resetting cache.
-Bootstrap to the start of init.init took 1523.95s
-Early init took 0.01s
+Bootstrap to the start of init.init took 159.09s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.23s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.12s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.11s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 160.403286934s
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+Resetting cache.
+Bootstrap to the start of init.init took 1838.26s
+Early init took 0.00s
 Loader init took 0.05s
-Loading error handling took 0.05s
-Loading script took 0.22s
+Loading error handling took 0.02s
+Loading script took 0.24s
 Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
@@ -817,7 +225,199 @@ Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.19s
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1839.44494104s
+Resetting cache.
+Bootstrap to the start of init.init took 1952.44s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.25s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.11s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1953.61788487s
+Resetting cache.
+Bootstrap to the start of init.init took 2030.35s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.22s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2031.64908791s
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+Resetting cache.
+Bootstrap to the start of init.init took 2046.08s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.23s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
+Dump and make backups. took 0.15s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.05s
@@ -830,30 +430,30 @@ Init translation took 0.07s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.13s
-Prepare screens took 0.14s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.06s
+Interface start took 0.04s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
 Display Info: None
-Number of texture units: 16
+Number of texture units: 18
 Using shader environment.
 Using FBO RTT.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 Using gl renderer.
 Texture testing:
-- Hardware max texture size: 8192
+- Hardware max texture size: 16384
 - 64px textures work.
 - 128px textures work.
 - 256px textures work.
@@ -863,25 +463,30 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1530.97547197s
+Total time until interface ready: 2047.24808908s
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
 Resetting cache.
-Bootstrap to the start of init.init took 1575.64s
+Bootstrap to the start of init.init took 2086.08s
 Early init took 0.00s
-Loader init took 0.02s
+Loader init took 0.06s
 Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata. took 0.02s
+Loading script took 0.23s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.05s
+Running init code took 0.08s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.13s
+Dump and make backups. took 0.11s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.05s
+Initial gc. took 0.04s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
@@ -891,30 +496,30 @@ Init translation took 0.05s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.08s
-Prepare screens took 0.09s
+Save screen analysis took 0.10s
+Prepare screens took 0.10s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.05s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
 Display Info: None
-Number of texture units: 16
+Number of texture units: 18
 Using shader environment.
 Using FBO RTT.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 Using gl renderer.
 Texture testing:
-- Hardware max texture size: 8192
+- Hardware max texture size: 16384
 - 64px textures work.
 - 128px textures work.
 - 256px textures work.
@@ -924,24 +529,198 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1582.3123889s
+Total time until interface ready: 2087.23137999s
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
 Resetting cache.
-Bootstrap to the start of init.init took 1579.67s
+Bootstrap to the start of init.init took 2365.20s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.16s
-Loading save slot metadata. took 0.02s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.20s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/motionfx.rpy", line 96: invalid syntax
+                    if !props['reverse']:
+                        ^
+    
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start took 0.12s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2365.86976409s
+Resetting cache.
+Bootstrap to the start of init.init took 2369.92s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.22s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.05s
+Running init code took 0.08s
 Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.09s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
+Dump and make backups. took 0.59s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.05s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2371.56676698s
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+[u'master', u'fx', u'transient', u'screens', u'overlay']
+Resetting cache.
+Bootstrap to the start of init.init took 2380.79s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.20s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2381.81076288s
+Resetting cache.
+Bootstrap to the start of init.init took 3306.68s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.24s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
@@ -952,29 +731,29 @@ Build styles took 0.01s
 Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.09s
+Prepare screens took 0.10s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.05s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
 Display Info: None
-Number of texture units: 16
+Number of texture units: 18
 Using shader environment.
 Using FBO RTT.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 Using gl renderer.
 Texture testing:
-- Hardware max texture size: 8192
+- Hardware max texture size: 16384
 - 64px textures work.
 - 128px textures work.
 - 256px textures work.
@@ -984,325 +763,13 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1586.20852304s
+Total time until interface ready: 3307.74269199s
 Resetting cache.
-Bootstrap to the start of init.init took 1617.70s
+Bootstrap to the start of init.init took 3330.15s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.05s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.08s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 1624.34173298s
-
-Full traceback:
-  File "game/script.rpy", line 24, in script
-    call screen magic_camera
-  File "renpy/ast.py", line 1969, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 1957, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/exports.py", line 2983, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3101, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3611, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2441, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/screen.py", line 681, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "game/engine.rpy", line 23, in render
-    Engine.scene.on_draw(render, width, height, st, at)
-  File "game/scenes.rpy", line 14, in on_draw
-    self.motion.draw(render, st)
-  File "game/motionfx.rpy", line 40, in draw
-    method( index, render, st, **motion.props )
-  File "game/motionfx.rpy", line 93, in _dissolve
-    render.blit(re, (0,0))
-UnboundLocalError: local variable 're' referenced before assignment
-
-While running game code:
-  File "game/script.rpy", line 24, in script
-    call screen magic_camera
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/engine.rpy", line 23, in render
-    Engine.scene.on_draw(render, width, height, st, at)
-  File "game/scenes.rpy", line 14, in on_draw
-    self.motion.draw(render, st)
-  File "game/motionfx.rpy", line 40, in draw
-    method( index, render, st, **motion.props )
-  File "game/motionfx.rpy", line 93, in _dissolve
-    render.blit(re, (0,0))
-UnboundLocalError: local variable 're' referenced before assignment
-Resetting cache.
-Bootstrap to the start of init.init took 1643.76s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.19s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.11s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.08s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 1650.4353621s
-Resetting cache.
-Bootstrap to the start of init.init took 1699.90s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.20s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.05s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.23s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.09s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 1706.73164511s
-Resetting cache.
-Bootstrap to the start of init.init took 1724.39s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.08s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
-Display Info: None
-Number of texture units: 16
-Using shader environment.
-Using FBO RTT.
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 8192
-- 64px textures work.
-- 128px textures work.
-- 256px textures work.
-- 512px textures work.
-- 1024px textures work.
-- 2048px textures work.
-Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
-Root FBO is: 0
-FBO Maximum Texture Size: 2048
-Total time until interface ready: 1731.0570941s
-Resetting cache.
-Bootstrap to the start of init.init took 1757.95s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.02s
-Loading script took 0.20s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.23s
 Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
@@ -1320,34 +787,34 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.06s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.09s
-Prepare screens took 0.10s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.05s
+Interface start took 0.04s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
 Display Info: None
-Number of texture units: 16
+Number of texture units: 18
 Using shader environment.
 Using FBO RTT.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 Using gl renderer.
 Texture testing:
-- Hardware max texture size: 8192
+- Hardware max texture size: 16384
 - 64px textures work.
 - 128px textures work.
 - 256px textures work.
@@ -1357,58 +824,58 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1764.67862391s
+Total time until interface ready: 3331.30889106s
 Resetting cache.
-Bootstrap to the start of init.init took 1767.33s
+Bootstrap to the start of init.init took 3347.52s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.22s
-Loading save slot metadata. took 0.02s
+Loader init took 0.08s
+Loading error handling took 0.04s
+Loading script took 0.27s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.08s
-Loading analysis data took 0.06s
-Analyze and compile ATL took 0.01s
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.14s
+Dump and make backups. took 0.12s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.05s
+Initial gc. took 0.04s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.05s
-Build styles took 0.01s
+Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.13s
-Prepare screens took 0.11s
+Save screen analysis took 0.11s
+Prepare screens took 0.12s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.05s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
 Display Info: None
-Number of texture units: 16
+Number of texture units: 18
 Using shader environment.
 Using FBO RTT.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 Using gl renderer.
 Texture testing:
-- Hardware max texture size: 8192
+- Hardware max texture size: 16384
 - 64px textures work.
 - 128px textures work.
 - 256px textures work.
@@ -1418,14 +885,75 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1774.19184494s
+Total time until interface ready: 3348.77990007s
 Resetting cache.
-Bootstrap to the start of init.init took 1929.23s
+Bootstrap to the start of init.init took 3358.81s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.19s
-Loading save slot metadata. took 0.02s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.24s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 3359.99690199s
+Resetting cache.
+Bootstrap to the start of init.init took 3477.57s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.26s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.06s
@@ -1433,7 +961,7 @@ Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\MotionFX':
-Dump and make backups. took 0.10s
+Dump and make backups. took 0.12s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.05s
@@ -1442,34 +970,34 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.07s
+Init translation took 0.06s
 Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.08s
+Analyze screens took 0.03s
+Save screen analysis took 0.10s
 Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.05s
+Interface start took 0.04s
 
 Initializing gl renderer:
-primary display bounds: (0, 0, 1440, 900)
+primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) HD Graphics 2000'
-Version: '3.1.0 - Build 9.17.10.4459'
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
 Display Info: None
-Number of texture units: 16
+Number of texture units: 18
 Using shader environment.
 Using FBO RTT.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
 Using gl renderer.
 Texture testing:
-- Hardware max texture size: 8192
+- Hardware max texture size: 16384
 - 64px textures work.
 - 128px textures work.
 - 256px textures work.
@@ -1479,4 +1007,4 @@ Texture testing:
 Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1935.91092396s
+Total time until interface ready: 3478.75969911s

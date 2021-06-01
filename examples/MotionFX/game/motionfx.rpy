@@ -57,12 +57,12 @@ init python:
                     object.items -= 1
                     self.motion.append(Motion(object.id, 1, dict))
 
-        def dissolve(self, image, time, unique=None, **kwargs):
+        def dissolve(self, image, time, save=None, **kwargs):
             dict = {
                 'image': image,
                 'time' : time,
                 'start': self.record[3],
-                'unique': unique,
+                'save': save,
                 'method': '_dissolve'
             }
             self.attach(dict, **kwargs)
@@ -81,7 +81,7 @@ init python:
                 offset = start + (end - start) * limit
                 d = Transform(child=image, alpha=offset)
             else:
-                if not props['unique']:
+                if not props['save']:
                     self.motion.pop(index)
                     return None
                 else:
