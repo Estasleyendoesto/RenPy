@@ -1,0 +1,3188 @@
+Wed Jun  2 11:26:06 2021
+Windows-10-10.0.19041
+Ren'Py 7.4.4.1439
+ 
+
+Bootstrap to the start of init.init took 0.14s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.04s
+Loading script took 0.59s
+Loading save slot metadata. took 0.09s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.29s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.03s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.09s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 3.38522696495s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3512, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 432, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3512, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 443, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 631, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 17, in __init__
+    fx.object('dog1.png', 580, 550, layer=7)
+TypeError: object() got an unexpected keyword argument 'layer'
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 17, in __init__
+    fx.object('dog1.png', 580, 550, layer=7)
+TypeError: object() got an unexpected keyword argument 'layer'
+Resetting cache.
+Bootstrap to the start of init.init took 58.52s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.03s
+Loading script took 0.21s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 60.6640179157s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3512, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 432, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3512, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 443, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 631, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 17, in __init__
+    fx.object('dog1.png', 580, 550, layer=6)
+TypeError: object() got an unexpected keyword argument 'layer'
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 17, in __init__
+    fx.object('dog1.png', 580, 550, layer=6)
+TypeError: object() got an unexpected keyword argument 'layer'
+Resetting cache.
+Bootstrap to the start of init.init took 68.65s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 70.7521548271s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3611, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2441, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 22, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 421, in draw
+    self.objectfx.draw(render)
+  File "game/fx.rpy", line 255, in draw
+    x, y = self.parallax.layers[res.layer].axis()
+AttributeError: 'Layer' object has no attribute 'axis'
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 22, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 421, in draw
+    self.objectfx.draw(render)
+  File "game/fx.rpy", line 255, in draw
+    x, y = self.parallax.layers[res.layer].axis()
+AttributeError: 'Layer' object has no attribute 'axis'
+Resetting cache.
+Bootstrap to the start of init.init took 154.34s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 156.480845928s
+Resetting cache.
+Bootstrap to the start of init.init took 230.81s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 232.985343933s
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init took 267.83s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 270.010951042s
+Resetting cache.
+Bootstrap to the start of init.init took 277.40s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 279.506170034s
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init took 391.65s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.35s
+Loading save slot metadata. took 0.08s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.12s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 394.010247946s
+Resetting cache.
+Bootstrap to the start of init.init took 437.44s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.09s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 439.52025485s
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init took 544.68s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.03s
+Loading script took 0.24s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.11s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 546.831400871s
+Resetting cache.
+Bootstrap to the start of init.init took 567.92s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 570.080515862s
+Resetting cache.
+Bootstrap to the start of init.init took 703.04s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.13s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 705.136112928s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3512, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 432, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3512, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 443, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 631, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 17, in __init__
+    fx.alive('lisa.res', 0.080)
+TypeError: alive() takes exactly 1 argument (3 given)
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 17, in __init__
+    fx.alive('lisa.res', 0.080)
+TypeError: alive() takes exactly 1 argument (3 given)
+Resetting cache.
+Bootstrap to the start of init.init took 768.38s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.30s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 770.551964045s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3611, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2441, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 24, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 422, in draw
+    alive.draw(render, st, alive-x, alive-y)
+TypeError: unsupported operand type(s) for -: 'Alivefx' and 'int'
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 24, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 422, in draw
+    alive.draw(render, st, alive-x, alive-y)
+TypeError: unsupported operand type(s) for -: 'Alivefx' and 'int'
+Resetting cache.
+Bootstrap to the start of init.init took 873.10s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.24s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 875.228705883s
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init took 936.09s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 938.171627998s
+Resetting cache.
+Bootstrap to the start of init.init took 947.15s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.20s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.09s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 949.239747047s
+Resetting cache.
+Bootstrap to the start of init.init took 955.22s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 957.346907854s
+Resetting cache.
+Bootstrap to the start of init.init took 976.92s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.09s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 979.031587839s
+Resetting cache.
+Bootstrap to the start of init.init took 984.89s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.23s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 987.037703991s
+Resetting cache.
+Bootstrap to the start of init.init took 1167.17s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.24s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1169.30776882s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3611, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2441, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 24, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 426, in draw
+    x, y = self.parallax.layers[alive.layer].axis()
+  File "renpy/python.py", line 992, in __getitem__
+    rv = list.__getitem__(self, index)
+TypeError: list indices must be integers, not NoneType
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 24, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 426, in draw
+    x, y = self.parallax.layers[alive.layer].axis()
+TypeError: list indices must be integers, not NoneType
+Resetting cache.
+Bootstrap to the start of init.init took 1179.61s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.26s
+Loading save slot metadata. took 0.02s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1181.66856194s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3611, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2441, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 24, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 426, in draw
+    x, y = self.parallax.layers[alive.layer].axis()
+  File "renpy/python.py", line 992, in __getitem__
+    rv = list.__getitem__(self, index)
+TypeError: list indices must be integers, not NoneType
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 24, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 426, in draw
+    x, y = self.parallax.layers[alive.layer].axis()
+TypeError: list indices must be integers, not NoneType
+Resetting cache.
+Bootstrap to the start of init.init took 1213.41s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.03s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1215.39176989s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3611, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2441, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 24, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 426, in draw
+    x, y = self.parallax.layers[alive.layer].axis()
+  File "renpy/python.py", line 992, in __getitem__
+    rv = list.__getitem__(self, index)
+TypeError: list indices must be integers, not NoneType
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 24, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 426, in draw
+    x, y = self.parallax.layers[alive.layer].axis()
+TypeError: list indices must be integers, not NoneType
+Resetting cache.
+Bootstrap to the start of init.init took 1236.61s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1238.68576384s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3611, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2441, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 24, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 427, in draw
+    alive.draw(render, st, axis.x-x, axis.y-y)
+NameError: global name 'axis' is not defined
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/fx.rpy", line 31, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 24, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 427, in draw
+    alive.draw(render, st, axis.x-x, axis.y-y)
+NameError: global name 'axis' is not defined
+Resetting cache.
+Bootstrap to the start of init.init took 1256.65s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.24s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1258.79084682s
+Resetting cache.
+Bootstrap to the start of init.init took 1340.51s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.25s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1342.64920187s
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init took 1675.69s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1677.81574583s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3512, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 432, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3512, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 443, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 631, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 19, in __init__
+    fx.object('dog1.png', x=580, y=610, layer=6)
+TypeError: object() got an unexpected keyword argument 'x'
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 19, in __init__
+    fx.object('dog1.png', x=580, y=610, layer=6)
+TypeError: object() got an unexpected keyword argument 'x'
+Resetting cache.
+Bootstrap to the start of init.init took 1697.35s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.24s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1699.46774101s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3512, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 432, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3512, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 443, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 631, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 19, in __init__
+    fx.object('dog1.png', x=580, y=610, layer=6)
+  File "game/fx.rpy", line 457, in object
+    self.objectfx.add(*args, **kwargs)
+TypeError: add() got an unexpected keyword argument 'y'
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 19, in __init__
+    fx.object('dog1.png', x=580, y=610, layer=6)
+  File "game/fx.rpy", line 457, in object
+    self.objectfx.add(*args, **kwargs)
+TypeError: add() got an unexpected keyword argument 'y'
+Resetting cache.
+Bootstrap to the start of init.init took 1723.47s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1725.59674382s
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/ast.py", line 1969, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 1957, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/exports.py", line 2983, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3512, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 432, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3512, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 443, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 631, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 19, in __init__
+    fx.object('dog1.png', x=580, y=610, layer=6)
+TypeError: object() takes exactly 1 argument (5 given)
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    call screen magic_camera
+  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera:
+  File "game/script.rpy", line 9, in execute
+    add Test('fondo.jpg')
+  File "game/script.rpy", line 9, in <module>
+    add Test('fondo.jpg')
+  File "game/scenes.rpy", line 19, in __init__
+    fx.object('dog1.png', x=580, y=610, layer=6)
+TypeError: object() takes exactly 1 argument (5 given)
+Resetting cache.
+Bootstrap to the start of init.init took 1775.35s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1777.48686385s
+Resetting cache.
+Bootstrap to the start of init.init took 1803.05s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.08s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.15s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.11s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1805.21591687s
+Resetting cache.
+Bootstrap to the start of init.init took 1844.59s
+Early init took 0.00s
+Loader init took 0.09s
+Loading error handling took 0.04s
+Loading script took 0.24s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1846.79991698s
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init took 1945.92s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.24s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1948.09597802s
+Resetting cache.
+Bootstrap to the start of init.init took 1991.87s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.09s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 1993.98402691s
+Resetting cache.
+Bootstrap to the start of init.init took 2008.98s
+Early init took 0.00s
+Loader init took 0.09s
+Loading error handling took 0.03s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+
+File "game/scenes.rpy", line 17: non-keyword arg after keyword arg
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Interface start took 0.11s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2010.61903501s
+Resetting cache.
+Bootstrap to the start of init.init took 2019.73s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2021.90302992s
+Resetting cache.
+Bootstrap to the start of init.init took 2142.85s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.27s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.14s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.16s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2145.11580396s
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Resetting cache.
+Bootstrap to the start of init.init took 2223.64s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.22s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Dump and make backups. took 0.13s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2225.68968487s
+Resetting cache.
+Bootstrap to the start of init.init took 2233.30s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2235.37968183s
+Resetting cache.
+Bootstrap to the start of init.init took 2245.80s
+Early init took 0.00s
+Loader init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Goblin\\AppData\\Roaming/RenPy/backups\\FX':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.10s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 5450'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 2247.87068105s
+Screen sizes: virtual=(1280, 720) physical=(1920, 1080) drawable=(1920, 1080)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
