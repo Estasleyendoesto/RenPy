@@ -1,70 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 23, in script
-    call screen magic_camera
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/script.rpy", line 8, in execute
-    screen magic_camera:
-  File "game/script.rpy", line 8, in execute
-    screen magic_camera:
-  File "game/script.rpy", line 9, in execute
-    add Test('fondo.jpg')
-  File "game/script.rpy", line 9, in <module>
-    add Test('fondo.jpg')
-  File "game/scenes.rpy", line 19, in __init__
-    fx.object('dog1.png', x=580, y=610, layer=6)
-TypeError: object() takes exactly 1 argument (5 given)
+  File "renpy/common/00start.rpy", line 190, in script
+    python:
+  File "renpy/common/00start.rpy", line 191, in <module>
+    renpy.execute_default_statement(True)
+  File "game/script.rpy", line 30, in set_default
+    default scache = Scenecache()
+  File "game/script.rpy", line 30, in <module>
+    default scache = Scenecache()
+TypeError: __init__() takes exactly 2 arguments (1 given)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 23, in script
-    call screen magic_camera
-  File "renpy/ast.py", line 1969, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 1957, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 570, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/exports.py", line 2983, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3101, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3512, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 567, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/screen.py", line 432, in visit_all
-    callback(self)
-  File "renpy/display/core.py", line 3512, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/screen.py", line 443, in per_interact
-    self.update()
-  File "renpy/display/screen.py", line 631, in update
-    self.screen.function(**self.scope)
-  File "game/script.rpy", line 8, in execute
-    screen magic_camera:
-  File "game/script.rpy", line 8, in execute
-    screen magic_camera:
-  File "game/script.rpy", line 9, in execute
-    add Test('fondo.jpg')
-  File "game/script.rpy", line 9, in <module>
-    add Test('fondo.jpg')
-  File "game/scenes.rpy", line 19, in __init__
-    fx.object('dog1.png', x=580, y=610, layer=6)
-TypeError: object() takes exactly 1 argument (5 given)
+  File "renpy/common/00start.rpy", line 190, in script
+    python:
+  File "renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 191, in <module>
+    renpy.execute_default_statement(True)
+  File "renpy/exports.py", line 3590, in execute_default_statement
+    i.set_default(start)
+  File "game/script.rpy", line 30, in set_default
+    default scache = Scenecache()
+  File "renpy/python.py", line 2242, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 30, in <module>
+    default scache = Scenecache()
+TypeError: __init__() takes exactly 2 arguments (1 given)
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 FX 1.0
-Wed Jun  2 11:54:50 2021
+Thu Jun  3 11:50:29 2021

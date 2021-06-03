@@ -70,22 +70,18 @@ init python:
 
         def __init__(self, bg, speed = 0.001):
             if os.path.splitext(bg)[1]:
-                res = renpy.displayable(bg)
-                # render = renpy.load_image( Image(bg) )
+                render = renpy.load_image( Image(bg) )
             else:
                 i = list(bg).index('x')
                 w, h = int(bg[:i]), int(bg[i+1:])
                 solid = Solid((0,0,0, 0), xsize=w, ysize=h)
-                res = renpy.displayable(solid)
-                # render = renpy.render(solid, w, h, 0, 0)
+                render = renpy.render(solid, w, h, 0, 0)
 
-            self.bg = res
-            # self.bgsize = self.bg.get_size()
-            self.bgsize = None
-            self.x = 0
-            self.y = 0
-            # self.x = self.bgsize[0] // 4
-            # self.y = self.bgsize[1] // 4
+            self.bg = render
+            self.bgsize = self.bg.get_size()
+
+            self.x = self.bgsize[0] // 4
+            self.y = self.bgsize[1] // 4
 
             self.oldx = 0
             self.oldy = 0
@@ -101,11 +97,6 @@ init python:
         def draw(self, render):
             # true size of the box
             width, height = render.get_size()
-            if not isinstance(self.bg, renpy.Render):
-                self.bg = renpy.render(self.bg, width, height, 0.0, 0.0)
-
-            self.bgsize = self.bg.get_size()
-
             relw = (self.bgsize[0] - width) * self.mouseX // width
             relh = (self.bgsize[1] - height) * self.mouseY // height
 

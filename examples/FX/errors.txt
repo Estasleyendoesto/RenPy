@@ -2,7 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/scenes.rpy", line 17: non-keyword arg after keyword arg
+File "game/scenes.rpy", line 5: invalid syntax
+    def mostrar:
+                ^
+    
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Wed Jun  2 11:59:35 2021
+Thu Jun  3 09:24:54 2021

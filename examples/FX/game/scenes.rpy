@@ -1,8 +1,20 @@
+
 init 1 python:
+    renpy.add_layer('fx', above='master', menu_clear=False) # no sirve pero me gusta
+
+    def save(): # hay que probar si funciona realmente el save
+        config.skipping = None
+        renpy.checkpoint()
+        renpy.block_rollback()
+        renpy.retain_after_load()
+
+    def mostrar():  # borrar (tempral)
+        print('tiempo')
 
     class Test(Scene):
         def __init__(self, bg, **kwargs):
             super(Test, self).__init__(**kwargs)
+
             fx = FX()
             fx.camera('px/1.png', 0.05)
             # Parallax
@@ -16,7 +28,7 @@ init 1 python:
             # Frames sequence
             fx.alive('lisa.res', 0.080, x=1250, y=710, layer=6)
             # Objects
-            fx.object('dog1.png', 580, 610, mask=False, layer=6)
+            fx.object('dog1.png', 580, 610, mask=True, layer=6)
 
             self.fx = fx
 
