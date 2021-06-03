@@ -6,7 +6,7 @@
 
 
 screen magic_camera():
-    $ save()                # no se si vladra
+    # $ save()                # no se si vladra
     layer 'fx'          # no sirve pero me gusta (creo que no sirve, probar sin él si guarda)
     # add test
     default test = Test('fondo.jpg')    # con default se guarda el objeto en el save, y podemos aprovechar el return

@@ -2,10 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/scenes.rpy", line 5: invalid syntax
-    def mostrar:
-                ^
-    
+File "game/fx.rpy", line 210: can't delete function call
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Thu Jun  3 09:24:54 2021
+Thu Jun  3 14:30:13 2021

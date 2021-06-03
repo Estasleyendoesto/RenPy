@@ -42,6 +42,8 @@ init 1 python:
             dog = self.fx.objectfx.res[0]
             if dog.hover:
                 dog.info = Text('dogecoin', color='#fff') 
+            if dog.click:
+                self.fx.delete('layer', 6)
 
         def on_update(self, st):
             pass

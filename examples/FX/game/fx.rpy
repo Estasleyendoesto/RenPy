@@ -6,7 +6,7 @@
 # author: Estasleyendoesto
 # site: https://github.com/Estasleyendoesto/RenPy
 
-init python:
+init -1 python:
     import cPickle
     import pygame
     import base64
@@ -14,6 +14,10 @@ init python:
     import os
     import io
 
+    # Layer
+    preferences.gl_framerate = 60
+    renpy.add_layer('fx', above='master', menu_clear=False)
+    # etc...
     class Engine(renpy.Displayable):
         """
         Basic Creator-Defined Displayable rendering a preloaded scene
@@ -71,21 +75,16 @@ init python:
         def __init__(self, bg, speed = 0.001):
             if os.path.splitext(bg)[1]:
                 res = renpy.displayable(bg)
-                # render = renpy.load_image( Image(bg) )
             else:
                 i = list(bg).index('x')
                 w, h = int(bg[:i]), int(bg[i+1:])
                 solid = Solid((0,0,0, 0), xsize=w, ysize=h)
                 res = renpy.displayable(solid)
-                # render = renpy.render(solid, w, h, 0, 0)
 
             self.bg = res
-            # self.bgsize = self.bg.get_size()
             self.bgsize = None
             self.x = 0
             self.y = 0
-            # self.x = self.bgsize[0] // 4
-            # self.y = self.bgsize[1] // 4
 
             self.oldx = 0
             self.oldy = 0
@@ -207,6 +206,9 @@ init python:
         def add(self, *arg, **kwargs):
             self.layers.append( Layer(*arg, **kwargs) )
 
+        def delete(self, index):
+            self.layers.pop(index)
+
     class Resource:
         """
         It is important for the operation of Objectfx
@@ -262,8 +264,11 @@ init python:
                 if self.cam:
                     x, y = [a-b for a,b in zip(res.rect[:2], self.cam.meta[:2])]
                     if self.parallax:
-                        axis = self.parallax.layers[res.layer].axis()
-                        x, y = [a-b for a,b in zip(res.rect[:2], axis)]
+                        try:
+                            axis = self.parallax.layers[res.layer].axis()
+                            x, y = [a-b for a,b in zip(res.rect[:2], axis)]
+                        except:
+                            pass
                 else:
                     x, y = res.rect[:2]
                 # draw resource
@@ -314,6 +319,9 @@ init python:
 
         def add(self, *arg, **kwargs):
             self.res.append( Resource(*arg, **kwargs) )
+
+        def delete(self, index):
+            self.res.pop(index)
 
     class Animate:
         """
@@ -428,7 +436,10 @@ init python:
                     if self.camfx:
                         x, y = self.camfx.meta[:2]
                     if self.parallax:
-                        x, y = self.parallax.layers[anime.layer].axis()
+                        try:
+                            x, y = self.parallax.layers[anime.layer].axis()
+                        except:
+                            pass
                     x = anime.x - x
                     y = anime.y - y
                 # Esto no xD
@@ -436,10 +447,14 @@ init python:
 
         def add(self, *args, **kwargs):
             self.animes.append( Animate(*args, **kwargs) )
+
+        def delete(self, index):
+            self.animes.pop(index)
     
     class FX:
         """
-        In progress...
+        Class constructor of all libraries fx
+        Each method automatically adds the functionalities of each fx library
         """
 
         def __init__(self):
@@ -494,3 +509,12 @@ init python:
                     self.alivefx.parallax = self.parallax
 
             self.alivefx.add(*args, **kwargs)
+
+        def delete(self, fx, index):
+            if fx == 'layer':
+                
+                self.parallax.delete(index)
+            if fx == 'object':
+                self.objectfx.delete(index)
+            if fx == 'alive':
+                self.alivefx.delete(index)
