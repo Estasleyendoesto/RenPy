@@ -5,15 +5,15 @@ While running game code:
     call screen magic_camera()
   File "renpy/common/000statements.rpy", line 570, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/fx.rpy", line 41, in event
-    return Engine.scene.on_event(ev, x, y, st)
-  File "game/scenes.rpy", line 46, in on_event
-    self.fx.delete('layer', 6)
-  File "game/fx.rpy", line 515, in delete
-    self.parallax.delete(index)
-  File "game/fx.rpy", line 210, in delete
-    self.layers.pop(index)
-IndexError: pop index out of range
+  File "game/fx.rpy", line 35, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 39, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 466, in draw
+    self.alivefx.draw(render, st)
+  File "game/fx.rpy", line 430, in draw
+    frame = frame.subsurface( (x, y, width, height) )
+error: subsurface rectangle outside surface area.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -34,31 +34,44 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "renpy/display/core.py", line 3101, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3910, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "renpy/display/screen.py", line 720, in event
-    rv = self.child.event(ev, x, y, st)
-  File "renpy/display/layout.py", line 1053, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "game/fx.rpy", line 41, in event
-    return Engine.scene.on_event(ev, x, y, st)
-  File "game/scenes.rpy", line 46, in on_event
-    self.fx.delete('layer', 6)
-  File "game/fx.rpy", line 515, in delete
-    self.parallax.delete(index)
-  File "game/fx.rpy", line 210, in delete
-    self.layers.pop(index)
-  File "renpy/python.py", line 875, in do_mutation
-    return method(self, *args, **kwargs)
-IndexError: pop index out of range
+  File "renpy/display/core.py", line 3611, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2441, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 777, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "game/fx.rpy", line 35, in render
+    Engine.scene.on_draw(render, width, height, st)
+  File "game/scenes.rpy", line 39, in on_draw
+    self.fx.draw(render, st)
+  File "game/fx.rpy", line 466, in draw
+    self.alivefx.draw(render, st)
+  File "game/fx.rpy", line 430, in draw
+    frame = frame.subsurface( (x, y, width, height) )
+  File "src/pygame_sdl2/surface.pyx", line 642, in pygame_sdl2.surface.Surface.subsurface
+error: subsurface rectangle outside surface area.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 FX 1.0
-Thu Jun  3 14:59:08 2021
+Fri Jun  4 14:10:43 2021

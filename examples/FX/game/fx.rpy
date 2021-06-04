@@ -17,7 +17,7 @@ init -1 python:
     # Layer
     preferences.gl_framerate = 60
     renpy.add_layer('fx', above='master', menu_clear=False)
-    # etc...
+    
     class Engine(renpy.Displayable):
         """
         Basic Creator-Defined Displayable rendering a preloaded scene
@@ -206,9 +206,6 @@ init -1 python:
         def add(self, *arg, **kwargs):
             self.layers.append( Layer(*arg, **kwargs) )
 
-        def delete(self, index):
-            self.layers.pop(index)
-
     class Resource:
         """
         It is important for the operation of Objectfx
@@ -216,10 +213,9 @@ init -1 python:
 
         _ev = None
 
-        def __init__(self, image, x=0, y=0, mask=False, layer=None):
+        def __init__(self, image, x=0, y=0, mask=False):
             self.image = renpy.displayable(image)
             self.hover = False
-            self.layer = layer      # required if parallax is active
             self.mask  = mask
             self.rect  = [x, y]     # required
             self.info  = None       # Text() or image route (None = off)
@@ -264,11 +260,8 @@ init -1 python:
                 if self.cam:
                     x, y = [a-b for a,b in zip(res.rect[:2], self.cam.meta[:2])]
                     if self.parallax:
-                        try:
-                            axis = self.parallax.layers[res.layer].axis()
-                            x, y = [a-b for a,b in zip(res.rect[:2], axis)]
-                        except:
-                            pass
+                        axis = self.parallax.layers[-1].axis()
+                        x, y = [a-b for a,b in zip(res.rect[:2], axis)]
                 else:
                     x, y = res.rect[:2]
                 # draw resource
@@ -321,14 +314,17 @@ init -1 python:
             self.res.append( Resource(*arg, **kwargs) )
 
         def delete(self, index):
-            self.res.pop(index)
+            try:
+                self.res.pop(index)
+            except:
+                pass
 
-    class Animate:
+    class FramesPackage:
         """
         It is important for Alivefx to function properly.
         """
 
-        def __init__(self, res, delay=0.0, loop=0, rever=False, landscape=False, x=0, y=0, layer=None):
+        def __init__(self, res, delay=0.0, loop=0, rever=False, landscape=False, x=0, y=0):
             # file = config.basedir + "/game\\" + res
             file = os.path.join(config.gamedir, 'images/' + res)
             res  = cPickle.load( open(file, 'rb') )
@@ -339,8 +335,6 @@ init -1 python:
             self.rever = rever # zigzag animation
 
             self.x, self.y = x, y
-
-            self.layer = layer
             
             # experimental
             self.landscape = landscape
@@ -413,7 +407,7 @@ init -1 python:
 
         def __init__(self):
             self.parallax = None
-            self.camfx    = None
+            self.cam    = None
             self.animes   = []
 
         def draw(self, render, st):
@@ -424,32 +418,31 @@ init -1 python:
                         anime.tracker()
                 
                 frame = anime.optimize()
-                # original axis
-                x = anime.x
-                y = anime.y
+                # base axis
+                x, y = 0, 0
+                if self.cam:
+                    x, y = self.cam.meta[:2]
+                if self.parallax:
+                    x, y = self.parallax.layers[-1].axis()
                 # Experimental
                 if anime.landscape:
                     width, height = render.get_size()
                     frame = frame.subsurface( (x, y, width, height) )
                     x, y = 0, 0
                 else:
-                    if self.camfx:
-                        x, y = self.camfx.meta[:2]
-                    if self.parallax:
-                        try:
-                            x, y = self.parallax.layers[anime.layer].axis()
-                        except:
-                            pass
                     x = anime.x - x
                     y = anime.y - y
                 # Esto no xD
                 render.blit( frame, (x, y) )
 
         def add(self, *args, **kwargs):
-            self.animes.append( Animate(*args, **kwargs) )
+            self.animes.append( FramesPackage(*args, **kwargs) )
 
         def delete(self, index):
-            self.animes.pop(index)
+            try:
+                self.animes.pop(index)
+            except:
+                pass
     
     class FX:
         """
@@ -511,9 +504,6 @@ init -1 python:
             self.alivefx.add(*args, **kwargs)
 
         def delete(self, fx, index):
-            if fx == 'layer':
-                
-                self.parallax.delete(index)
             if fx == 'object':
                 self.objectfx.delete(index)
             if fx == 'alive':
