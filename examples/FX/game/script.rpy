@@ -6,7 +6,8 @@
 
 
 screen magic_camera():
-    $ ui.timer(delay=1.0, repeat=True, action=[Function(mostrar)])
+    # Reloj
+    # $ ui.timer(delay=1.0, repeat=True, action=[Function(mostrar)])
     
     layer 'fx'
     default test = Test('fondo.jpg')

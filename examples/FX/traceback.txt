@@ -1,25 +1,25 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 32, in script
-    call screen magic_camera()
+  File "game/script.rpy", line 27, in script
+    call screen magic_camera() with dissolve
   File "renpy/common/000statements.rpy", line 570, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/fx.rpy", line 35, in render
-    Engine.scene.on_draw(render, width, height, st)
-  File "game/scenes.rpy", line 39, in on_draw
-    self.fx.draw(render, st)
-  File "game/fx.rpy", line 466, in draw
-    self.alivefx.draw(render, st)
-  File "game/fx.rpy", line 430, in draw
-    frame = frame.subsurface( (x, y, width, height) )
-error: subsurface rectangle outside surface area.
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera():
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera():
+  File "game/script.rpy", line 9, in execute
+    $ ui.timer(delay=1.0, repeat=True, action=[Function(mostrar)])
+  File "game/script.rpy", line 9, in <module>
+    $ ui.timer(delay=1.0, repeat=True, action=[Function(mostrar)])
+NameError: name 'mostrar' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 32, in script
-    call screen magic_camera()
+  File "game/script.rpy", line 27, in script
+    call screen magic_camera() with dissolve
   File "renpy/ast.py", line 1969, in execute
     self.call("execute")
   File "renpy/ast.py", line 1957, in call
@@ -34,44 +34,35 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "renpy/display/core.py", line 3101, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3611, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "renpy/display/core.py", line 2441, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 492, in renpy.display.render.render_screen
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/screen.py", line 681, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "renpy/display/layout.py", line 777, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 263, in renpy.display.render.render
-  File "game/fx.rpy", line 35, in render
-    Engine.scene.on_draw(render, width, height, st)
-  File "game/scenes.rpy", line 39, in on_draw
-    self.fx.draw(render, st)
-  File "game/fx.rpy", line 466, in draw
-    self.alivefx.draw(render, st)
-  File "game/fx.rpy", line 430, in draw
-    frame = frame.subsurface( (x, y, width, height) )
-  File "src/pygame_sdl2/surface.pyx", line 642, in pygame_sdl2.surface.Surface.subsurface
-error: subsurface rectangle outside surface area.
+  File "renpy/display/core.py", line 3512, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 432, in visit_all
+    callback(self)
+  File "renpy/display/core.py", line 3512, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/screen.py", line 443, in per_interact
+    self.update()
+  File "renpy/display/screen.py", line 631, in update
+    self.screen.function(**self.scope)
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera():
+  File "game/script.rpy", line 8, in execute
+    screen magic_camera():
+  File "game/script.rpy", line 9, in execute
+    $ ui.timer(delay=1.0, repeat=True, action=[Function(mostrar)])
+  File "game/script.rpy", line 9, in <module>
+    $ ui.timer(delay=1.0, repeat=True, action=[Function(mostrar)])
+NameError: name 'mostrar' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 FX 1.0
-Fri Jun  4 14:10:43 2021
+Fri Jun  4 17:20:24 2021
