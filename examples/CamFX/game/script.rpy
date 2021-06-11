@@ -8,26 +8,47 @@
 
 init python:
     config.developer = True
-    preferences.fullscreen   = True
+    preferences.fullscreen   = False
     preferences.gl_tearing   = False
     preferences.gl_framerate = 60
+
+    import random
+    import math
 
     class MyD(renpy.Displayable):
         
         def __init__(self, bg, **kwargs):
             super(MyD, self).__init__(**kwargs)
-            self.camfx = CamFX( bg, 0.05 )
+            self.eyemove = AutocamFX( bg, 0.02 )
+
+            self.sec = 0.0
+            self.x, self.y = 0, 0
 
         def render(self, width, height, st, at):
             render = renpy.Render(width, height)
 
-            self.camfx.fx_on(render)
+            anime = self.anime(st)
+            if anime:
+                self.x = random.randint(0, 1280)
+                self.y = random.randint(0, 720)
+           
+            self.eyemove.draw(render, self.x, self.y)
+
             # Redraw
             renpy.redraw(self, 0)
             return render
 
+        def anime(self, st):
+            t = 50
+            v = 24 / float(t)
+            d = st / v
+            # eval integer
+            if math.modf(d)[1] > self.sec:
+                self.sec = d
+                return True
+
+
         def event(self, event, x, y, st):
-            self.camfx.mouse(x, y)
             return None
 
         def visit(self):
@@ -35,7 +56,7 @@ init python:
 
 
 screen magic_camera:
-    add MyD('room.png')
+    add MyD('anime.png')
     # Se puede usar un tamaño distinto para el Displayable
     # add MyD('room.png'):
     #    size (800, 600)
