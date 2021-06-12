@@ -7,7 +7,8 @@ init 1 python:
 
             fx = FX()
             # Camera
-            fx.camera('1920x1080', 0.05)
+            # fx.camera('1920x1080', 0.05)
+            fx.autocamera('1920x1080', 0.05, 30)
             # Parallax
             fx.layer('px/1.png', 0.00)
             fx.layer('px/2.png', 0.00)

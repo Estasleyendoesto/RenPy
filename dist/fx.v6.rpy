@@ -32,14 +32,16 @@ init -1 python:
         def render(self, width, height, st, at):
             render = renpy.Render(width, height)
             
-            Engine.scene.on_update(st)
-            Engine.scene.on_draw(render, width, height, st)
+            if Engine.scene:
+                Engine.scene.on_update(st)
+                Engine.scene.on_draw(render, width, height, st)
 
             renpy.redraw(self, 0)
             return render
 
         def event(self, ev, x, y, st):
-            return Engine.scene.on_event(ev, x, y, st)
+            if Engine.scene:
+                return Engine.scene.on_event(ev, x, y, st)
 
         def visit(self):
             return []
@@ -101,10 +103,9 @@ init -1 python:
         def draw(self, render):
             # true size of the box
             width, height = render.get_size()
-            if not isinstance(self.bg, renpy.Render):
-                self.bg = renpy.render(self.bg, width, height, 0.0, 0.0)
+            bg = renpy.render(self.bg, width, height, 0.0, 0.0)
 
-            self.bgsize = self.bg.get_size()
+            self.bgsize = bg.get_size()
 
             relw = (self.bgsize[0] - width) * self.mouseX // width
             relh = (self.bgsize[1] - height) * self.mouseY // height
@@ -122,7 +123,7 @@ init -1 python:
             else:
                 self.x, self.y = self.oldx, self.oldy
 
-            bg = self.bg.subsurface( (self.x, self.y, width, height) )
+            bg = bg.subsurface( (self.x, self.y, width, height) )
             render.blit(bg, (0, 0))
 
         def mouse(self, x, y):
@@ -184,9 +185,8 @@ init -1 python:
         
         def draw(self, render, st):
             width, height = render.get_size()
-            if not isinstance(self.bg, renpy.Render):
-                self.bg = renpy.render(self.bg, width, height, 0.0, 0.0)
-            self.bgsize = self.bg.get_size()
+            bg = renpy.render(self.bg, width, height, 0.0, 0.0)
+            self.bgsize = bg.get_size()
 
             if self.sleep(st):
                 self.rx = random.randint(0, width)
@@ -203,7 +203,7 @@ init -1 python:
             self.x += self.dx * self.speed
             self.y += self.dy * self.speed
 
-            bg = self.bg.subsurface( (self.x, self.y, width, height) )
+            bg = bg.subsurface( (self.x, self.y, width, height) )
             render.blit(bg, (0, 0))
         
         @property
@@ -292,10 +292,11 @@ init -1 python:
 
         _ev = None
 
-        def __init__(self, image, x=0, y=0, mask=False):
+        def __init__(self, image, x=0, y=0, mask=False, name=''):
             self.image = renpy.displayable(image)
             self.hover = False
             self.mask  = mask
+            self.name  = name
             self.rect  = [x, y]     # required
             self.info  = None       # Text() or image route (None = off)
 
@@ -535,18 +536,20 @@ init -1 python:
             self.parallax  = None
             self.objectfx  = None
             self.alivefx   = None
+            self.freeze    = False
 
         def draw(self, render, st):
-            if self.camfx:
-                self.camfx.draw(render)
-            if self.autocamfx:
-                self.autocamfx.draw(render, st)
-            if self.parallax:
-                self.parallax.draw(render)
-            if self.alivefx:
-                self.alivefx.draw(render, st)
-            if self.objectfx:
-                self.objectfx.draw(render)
+            if not self.freeze:
+                if self.camfx:
+                    self.camfx.draw(render)
+                if self.autocamfx:
+                    self.autocamfx.draw(render, st)
+                if self.parallax:
+                    self.parallax.draw(render)
+                if self.alivefx:
+                    self.alivefx.draw(render, st)
+                if self.objectfx:
+                    self.objectfx.draw(render)
 
         def action(self, ev, x, y, st):
             if self.camfx:
@@ -574,12 +577,14 @@ init -1 python:
         def object(self, *args, **kwargs):
             if self.objectfx is None:
                 self.objectfx = Objectfx()
+                if self.parallax:
+                    self.objectfx.parallax = self.parallax
+                    
+            if self.objectfx.cam is None:
                 if self.camfx:
                     self.objectfx.cam = self.camfx
                 if self.autocamfx:
                     self.objectfx.cam = self.autocamfx 
-                if self.parallax:
-                    self.objectfx.parallax = self.parallax
 
             self.objectfx.add(*args, **kwargs)
 
@@ -606,3 +611,9 @@ init -1 python:
                 self.objectfx.delete(index)
             if fx == 'alive':
                 self.alivefx.delete(index)
+
+        def stop(self):
+            self.freeze = True
+
+        def resume(self):
+            self.freeze = False
